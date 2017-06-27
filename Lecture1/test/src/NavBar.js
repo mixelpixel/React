@@ -4,7 +4,8 @@ import './NavBar.css'; // <--- works with className="navbar"
 export default class NavBar extends Component {
   render() {
     return (
-      <div className="navbar"> // <--- class vs className, somewhat different attributes
+       // class vs className, somewhat different attributes
+      <div className="navbar">
 
       </div>
     );
