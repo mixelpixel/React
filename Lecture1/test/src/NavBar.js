@@ -10,6 +10,7 @@ export default class NavBar extends Component {
         <NavBarButton text={'Home'} />
         <NavBarButton text={'FAQ'} />
         <NavBarButton text={'LogIn'} />
+        <NavBarButton text={'About'} />
       </div>
     );
   }
