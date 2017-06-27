@@ -16,6 +16,7 @@ class App extends Component {
       //   </p>
       // </div>
       <div>
+        <NavBar />
         Hello World!
       </div>
     );
