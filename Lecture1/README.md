@@ -323,7 +323,7 @@ import './NavBar.css';
 export default class NavBar extends Component {
   render() {
     return {
-      <div className="navbar"> // <--- somewhat different attributes
+      <div className="navbar">
         <NavBarButton />
         <NavBarButton />
         <NavBarButton />
