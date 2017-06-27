@@ -4,7 +4,7 @@ if (true) {
 }
 console.log(x);
 
-/* Will print two line of 'hi'
+/* Will print two lines of 'hi'
 hi
 hi
 */

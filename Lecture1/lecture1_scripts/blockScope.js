@@ -6,6 +6,6 @@ function foo() {
   console.log(x);
 }
 
-foo(); // <--- prints two line of 'hi'
+foo(); // <--- prints two lines of 'hi'
 
 // console.log(x); // <--- ReferenceError: x is not defined
