@@ -223,30 +223,30 @@ class App extends Component {
 export default App;
 ```
 
-
+## [@29m39s](https://youtu.be/7QwRtGtluJk?t=29m39s) **Create a Navigation Bar**
 - Files for components are usually Capitalized.js
-- e.g. NavBar.js
-```js
-import React, { Component } from 'react'; // <--- no dot slash means look in node modules folder
-import './NavBar.css'; // <--- works with className="navbar"
+- e.g. [NavBar.js](Lecture1/test/NavBar.js)
+  ```jsx
+  import React, { Component } from 'react'; // <--- no dot slash means look in node modules folder
+  import './NavBar.css'; // <--- works with className="navbar"
 
-export default class NavBar extends Component {
-  render() {
-    return {
-      <div className="navbar"> // <--- somewhat different attributes
+  export default class NavBar extends Component {
+    render() {
+      return (
+        <div className="navbar"> // <--- class vs className, somewhat different attributes
 
-      </div>
+        </div>
+      );
     }
   }
-}
-```
-WORKS WITH "NavBar.css"
-```css
-.navbar {
-  height: 100px;
-  background-color: whitesmoke;
-}
-```
+  ```
+- Works in conjunction with "NavBar.css"
+  ```css
+  .navbar {
+    height: 100px;
+    background-color: whitesmoke;
+  }
+  ```
 AND THIS:
 ```js
 import React, {Component} from 'react';
