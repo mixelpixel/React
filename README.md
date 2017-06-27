@@ -181,14 +181,78 @@ export default class NavBar extends Component {
   render() {
     return {
       <div className="navbar"> // <--- somewhat different attributes
-        ...
+
       </div>
     }
   }
 }
 ```
 WORKS WITH "NavBar.css"
+```css
+.navbar {
+  height: 100px;
+  background-color: whitesmoke;
+}
+```
+AND THIS:
+```js
+import React, {Component} from 'react';
+import NavBar from './NavBar' // <--- defaults to .js
+import logo from './logo.svg';
+import './App.css';
 
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <NavBar /> // <--- all html elements can be self-closing
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+- NavBarButton.js
+```js
+import React, { Component } from 'react';
+
+export default class NavBarButton extends Component {
+
+}
+```
+SAME AS
+```js
+import React, { Component } from 'react';
+
+class NavBarButton extends Component {
+  render() {
+    <button>
+      // NavBar Button
+      { this.prop.text }
+    </button>
+  }
+}
+
+export default NavBarButton;
+```
+- NavBar.js
+```js
+import React, { Component } from 'react'; // <--- no dot slash means look in node modules folder
+import './NavBar.css'; // <--- works with className="navbar"
+
+export default class NavBar extends Component {
+  render() {
+    return {
+      <div className="navbar"> // <--- somewhat different attributes
+        <NavBarButton text={}'Home'} />
+        <NavBarButton text={}'FAQ'} />
+        <NavBarButton text={}'LogIn'} />
+      </div>
+    }
+  }
+}
+```
 
 
 </p></details>
