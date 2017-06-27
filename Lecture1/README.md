@@ -270,13 +270,11 @@ export default App;
   export default App;
   ```
 
-
-
-
-
-
-
-- NavBarButton.js
+## [@35m45s](https://youtu.be/7QwRtGtluJk?t=35m45s) **Create Navigation Bar Buttons**
+- [NavBarButton.js](Lecture1/test/src/NavBarButton.js)
+- - - NOTE: re: the React Component:
+      - - - - When all of the code gets compiled, it gets tied together thanks to the react module, even though we don't explicitly use it in each file.
+- This syntax:
 ```js
 import React, { Component } from 'react';
 
@@ -284,8 +282,8 @@ export default class NavBarButton extends Component {
 
 }
 ```
-SAME AS
-```js
+- is the same as this syntax:
+```jsx
 import React, { Component } from 'react';
 
 class NavBarButton extends Component {
@@ -299,6 +297,9 @@ class NavBarButton extends Component {
 
 export default NavBarButton;
 ```
+
+
+
 - NavBar.js
 ```js
 import React, { Component } from 'react'; // <--- no dot slash means look in node modules folder
