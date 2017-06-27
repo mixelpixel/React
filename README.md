@@ -4,6 +4,7 @@
 - https://github.com/reactjs
 - https://en.wikipedia.org/wiki/React_(JavaScript_library)
 - https://babeljs.io/
+- https://babeljs.io/docs/editors
 - https://atom.io/packages/language-babel
 - https://jsx.github.io/
 
