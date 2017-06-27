@@ -234,7 +234,8 @@ export default App;
   export default class NavBar extends Component {
     render() {
       return (
-        <div className="navbar"> // <--- class vs className, somewhat different attributes
+        // <--- class vs className, somewhat different attributes
+        <div className="navbar">
 
         </div>
       );
@@ -259,7 +260,7 @@ export default App;
     render() {
       return (
         <div>
-          <NavBar /> // <--- all html elements can be self-closing
+          <NavBar />
         </div>
       );
     }
