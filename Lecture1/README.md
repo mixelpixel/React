@@ -73,6 +73,7 @@ console.log(x); // ---> 6
 ## [@7m](https://youtu.be/7QwRtGtluJk?t=7m) **Babel**
 - https://babeljs.io/
 - Babel takes the ES6 code and compiles it
+
 ## [@7m44s](https://youtu.be/7QwRtGtluJk?t=7m44s) **Constructors and Syntactic Sugar**
 - Constructors:
 ```js
@@ -118,12 +119,14 @@ const me = new User({
 
 me.sayHello(); // <--- Hello! My name is Ben.
 ```
+
 ## [@13m23s](https://youtu.be/7QwRtGtluJk?t=13m23s) **Create React Apps**
 - `sudo npm install -g create-react-app`
 - `-g` makes it global
 - once it's globally, the `create-react-app <app name>` command works!
 - localhost:3000
 - ES6 class
+
 ## [@20m48s](https://youtu.be/7QwRtGtluJk?t=20m48s) **Importing and Exporting**
 - Instead of one big file for a web page, you can use several files - more manageable.
 - e.g. import <something> from './file_path';
@@ -146,6 +149,7 @@ class App extends React.Component {
   ...
 }
 ```
+
 ## [@26m32s](https://youtu.be/7QwRtGtluJk?t=26m32s) **Components and Render Methods**
 - every React component has a render method.
 - Render method is where the HTML is defined which ends up on screen
