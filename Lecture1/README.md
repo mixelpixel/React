@@ -192,12 +192,12 @@ me.sayHello(); // <--- Hello! My name is Ben.
 - Don't mess with the files in `project/node_modules`
 - `import React, { Component } from 'react';` imports a React component from the 'react' library in the node_modules directory
 - de-structured import statement, e.g.
-  ```jsx
+  ```js
   import React, { Component } from 'react';
   class App extends Component {...}
   ```
   ...is the same thing as:
-  ```jsx
+  ```js
   import React from 'react';
   class App extends React.Component {...}
   ```
