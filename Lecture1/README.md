@@ -81,7 +81,7 @@ console.log(x); // ---> 6
 - https://babeljs.io/
 - Babel takes the ES6 code and compiles it to ES5/JavaScript for browsers
 
-## [@7m44s](https://youtu.be/7QwRtGtluJk?t=7m44s) **Constructors, Syntactic Sugar and Class**
+## [@7m44s](https://youtu.be/7QwRtGtluJk?t=7m44s) **Constructors, Syntactic Sugar, `class` & `construcor`**
 - ES5 constructor functions:
 ```js
 function User(options) {
