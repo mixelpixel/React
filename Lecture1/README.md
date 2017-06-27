@@ -249,7 +249,7 @@ export default App;
   }
   ```
 - And since NavBar.js imports NavBar.css, they get imported in src/App.js:
-  ```js
+  ```jsx
   import React, {Component} from 'react';
   import NavBar from './NavBar' // <--- NavBar.js imported by App.js (defaults to .js)
   import logo from './logo.svg';
