@@ -13,8 +13,8 @@
 
 <details><summary><b>LESSON ONE: NOTES</b></summary><p>
 
-### LESSON ONE LECTURE NOTES
-#### [@1m08s](https://youtu.be/7QwRtGtluJk?t=1m08s) **Lecture starts**
+## LESSON ONE LECTURE NOTES
+### [@1m08s](https://youtu.be/7QwRtGtluJk?t=1m08s) **Lecture starts**
 - https://jsbin.com/
   - Pull up the JavaScript menu and select ES6/Babel
 - ES6 and Babel to use NEW and EXCITING ECMAScript features
@@ -31,38 +31,39 @@ if (true) {
 }                 // ---> function scope remains so x = 'hi'
 console.log(x);   // ---> hi
 ```
-- [Block Scope](Lecture1/blockScope.js)
-- Can think of it as if all the code is happening inside the same function
-```js
-function foo() {
-  if (true) {
-    var x = 'hi';
+- [ES6 Block Scope](Lecture1/blockScope.js)
+  - Can think of ES6 style as if all the code is happening inside the same function, e.g.
+  - (is it correct to say that it is ES6?)
+  ```js
+  function foo() {
+    if (true) {
+      var x = 'hi';
+      console.log(x);
+    }
     console.log(x);
   }
-  console.log(x);
-}
-foo();          // ---> hi \n hi
-console.log(x); // <--- ReferenceError!!!
-```
+  foo();          // ---> hi \n hi
+  console.log(x); // <--- ReferenceError!!!
+  ```
 - BOTH `let` and  `const` are BLOCK SCOPED
-- `let`
-```js
-if (true) {
-  let x = 'hi';
-  console.log(x) // ---> hi
-}
+  - `let`
+  ```js
+  if (true) {
+    let x = 'hi';
+    console.log(x) // ---> hi
+  }
 
-console.log(x)   // <--- ReferenceError
-```
-- `const`
-```js
-if (true) {
-  const x = 'hi';
-  console.log(x) // ---> hi
-}
+  console.log(x)   // <--- ReferenceError
+  ```
+  - `const`
+  ```js
+  if (true) {
+    const x = 'hi';
+    console.log(x) // ---> hi
+  }
 
-console.log(x)   // <--- ReferenceError
-```
+  console.log(x)   // <--- ReferenceError
+  ```
 - `const` is immutable, e.g.
 ```js
 const x = 5;
@@ -75,10 +76,10 @@ x++;
 console.log(x); // ---> 6
 ```
 - Don't use `var`. Always use `const`, unless it has to change, then use `let`
-#### [@7m](https://youtu.be/7QwRtGtluJk?t=7m) **Babel**
+### [@7m](https://youtu.be/7QwRtGtluJk?t=7m) **Babel**
 - https://babeljs.io/
 - Babel takes the ES6 code and compiles it
-#### [@7m44s](https://youtu.be/7QwRtGtluJk?t=7m44s) **Constructors and Syntactic Sugar**
+### [@7m44s](https://youtu.be/7QwRtGtluJk?t=7m44s) **Constructors and Syntactic Sugar**
 - Constructors:
 ```js
 function User(options) {
@@ -123,13 +124,13 @@ const me = new User({
 
 me.sayHello(); // <--- Hello! My name is Ben.
 ```
-#### [@13m23s](https://youtu.be/7QwRtGtluJk?t=13m23s) **Create React Apps**
+### [@13m23s](https://youtu.be/7QwRtGtluJk?t=13m23s) **Create React Apps**
 - `sudo npm install -g create-react-app`
 - `-g` makes it global
 - once it's globally, the `create-react-app <app name>` command works!
 - localhost:3000
 - ES6 class
-#### [@20m48s](https://youtu.be/7QwRtGtluJk?t=20m48s) **Importing and Exporting**
+### [@20m48s](https://youtu.be/7QwRtGtluJk?t=20m48s) **Importing and Exporting**
 - Instead of one big file for a web page, you can use several files - more manageable.
 - e.g. import <something> from './file_path';
 - e.g. export default App
@@ -151,7 +152,7 @@ class App extends React.Component {
   ...
 }
 ```
-#### [@26m32s](https://youtu.be/7QwRtGtluJk?t=26m32s) **Components and Render Methods**
+### [@26m32s](https://youtu.be/7QwRtGtluJk?t=26m32s) **Components and Render Methods**
 - every React component has a render method.
 - Render method is where the HTML is defined which ends up on screen
 - JSX: html-like code
