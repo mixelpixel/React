@@ -370,6 +370,7 @@ export default class NavBar extends Component {
   }
   ```
 - Why 'props'??? Is this a keyword?
+- https://facebook.github.io/react/docs/components-and-props.html
 
 ## [@42m36s](https://youtu.be/7QwRtGtluJk?t=42m36s) **Summary**
 - let
