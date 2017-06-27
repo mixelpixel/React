@@ -23,7 +23,7 @@
 let x = 5;    // let says we're creating a variable which can be changed later on
 const y = 10; // defining a constant and we NEVER want it to change - an error appears if we try and change it
 ```
-- [JS "block" scoping](ifTrue.js)
+- [JS "block" scoping](Lecture1/ifTrue.js)
 ```js
 if (true) {
   var x = 'hi';
@@ -31,7 +31,7 @@ if (true) {
 }                 // ---> function scope remains so x = 'hi'
 console.log(x);   // ---> hi
 ```
-- [Block Scope](blockScope.js)
+- [Block Scope](Lecture1/blockScope.js)
 - Can think of it as if all the code is happening inside the same function
 ```js
 function foo() {
