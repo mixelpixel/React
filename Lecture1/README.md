@@ -1,5 +1,5 @@
 # LESSON ONE LECTURE NOTES
-## [@1m08s](https://youtu.be/7QwRtGtluJk?t=1m08s) **Lecture starts**
+## [@1m08s](https://youtu.be/7QwRtGtluJk?t=1m08s) **Lecture 1 starts**
 - https://jsbin.com/
   - Pull up the JavaScript menu and select ES6/Babel
 - ES6 and Babel to use NEW and EXCITING ECMAScript features
