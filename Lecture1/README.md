@@ -207,9 +207,9 @@ me.sayHello(); // <--- Hello! My name is Ben.
 - Render method is where the HTML is defined which ends up on screen
 - JSX: html-like code
   - https://jsx.github.io/
-- It all gets boiled down to ES5 code...
-- ONE element gets returned, but it can have tons of stuff in it.
-```js
+- It all gets compiled down to ES5 code...
+- ONE "root" element gets returned, but it can have tons of stuff in it.
+```jsx
 class App extends Component {
   render() {
     return (
