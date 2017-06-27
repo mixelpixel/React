@@ -15,13 +15,13 @@ let x = 5;    // "let" for when we're creating a variable which can be changed l
 const y = 10; // "constant" for when we NEVER want it to change - errors if we try
 ```
 - [JS/ES5 "block" scoping](Lecture1/ifTrue.js), e.g. the following is all in the same scope:
-```js
-if (true) {
-  var x = 'hi';
-  console.log(x); // ---> hi
-}                 // ---> function scope remains so x == 'hi'
-console.log(x);   // ---> hi
-```
+  ```js
+  if (true) {
+    var x = 'hi';
+    console.log(x); // ---> hi
+  }                 // ---> function scope remains so x == 'hi'
+  console.log(x);   // ---> hi
+  ```
   - [ES6 style Block Scope](Lecture1/blockScope.js)
   - Can think of ES6 style as if all the code is happening _inside_ the same function.
   - The scope is contained inside the above `if` statement (and also in `for-loops`) e.g.
