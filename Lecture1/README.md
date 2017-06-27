@@ -222,6 +222,8 @@ class App extends Component {
 
 export default App;
 ```
+
+
 - Files for components are usually Capitalized.js
 - e.g. NavBar.js
 ```js
