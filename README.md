@@ -1,9 +1,10 @@
-# Lambda School: React
+# Lambda School Pro: React
 - Lambda School tutorial: https://lambdaschool.com/pro/react
 - https://facebook.github.io/react/
 - https://github.com/reactjs
 - https://en.wikipedia.org/wiki/React_(JavaScript_library)
 - https://babeljs.io/
+- https://atom.io/packages/language-babel
 - https://jsx.github.io/
 
 # Lesson 1 - Introduction to React and ES6
