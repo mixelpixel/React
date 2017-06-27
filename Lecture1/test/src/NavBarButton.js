@@ -4,7 +4,7 @@ export default class NavBarButton extends Component {
   render() {
     return (
       <button>
-        NavBar Button
+        { this.props.text }
       </button>
     );
   }

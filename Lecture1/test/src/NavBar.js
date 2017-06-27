@@ -7,9 +7,9 @@ export default class NavBar extends Component {
     return (
        // class vs className, somewhat different attributes
       <div className="navbar">
-        <NavBarButton />
-        <NavBarButton />
-        <NavBarButton />
+        <NavBarButton text={'Home'} />
+        <NavBarButton text={'FAQ'} />
+        <NavBarButton text={'LogIn'} />
       </div>
     );
   }
