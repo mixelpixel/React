@@ -15,6 +15,7 @@
 ### LESSON ONE LECTURE NOTES
 #### [@1m08s](https://youtu.be/7QwRtGtluJk?t=1m08s) **Lecture starts**
 - https://jsbin.com/
+  - Pull up the JavaScript menu and select ES6/Babel
 - ES6 and Babel to use NEW and EXCITING ECMAScript features
 - **`let` and `const` - say goodbye to `var`**
 ```js
@@ -126,8 +127,29 @@ me.sayHello(); // <--- Hello! My name is Ben.
 - `-g` makes it global
 - once it's globally, the `create-react-app <app name>` command works!
 - localhost:3000
+- ES6 class
+#### [@20m48s](https://youtu.be/7QwRtGtluJk?t=20m48s) **Importing and Exporting**
+- Instead of one big file for a web page, you can use several files - more manageable.
+- e.g. import <something> from './file_path';
+- e.g. export default App
+- destructured import statement, e.g.
+```js
+import React, { Component } from 'react';
+...
 
+class App extends Component {
+  ...
+}
+```
+  IS THE SAME THINGS AS:
+```js
+import React from 'react';
+...
 
+class App extends React.Component {
+  ...
+}
+```
 
 
 
