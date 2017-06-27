@@ -163,7 +163,7 @@ me.sayHello(); // <--- Hello! My name is Ben.
   ```js
   import React, { Component } from 'react';
   import logo from './logo.svg'
-  import './App.css';
+  import './App.css'; // <--- ./ means in the same directory
 
   class App extends Component { ... }
 
@@ -226,7 +226,7 @@ export default App;
 
 ## [@29m39s](https://youtu.be/7QwRtGtluJk?t=29m39s) **Create a Navigation Bar**
 - Files for components are usually Capitalized.js, Capitalized.css, etc.
-- e.g. [NavBar.js](Lecture1/test/src/NavBar.js)
+- e.g. [src/NavBar.js](Lecture1/test/src/NavBar.js)
   ```jsx
   import React, { Component } from 'react'; // <--- no dot slash means look in node modules folder
   import './NavBar.css'; // <--- works with className="navbar"
@@ -241,7 +241,7 @@ export default App;
     }
   }
   ```
-- Works in conjunction with [NavBar.css](Lecture1/test/src/NavBar.css) thanks to the IMPORT statement above
+- Works in conjunction with [src/NavBar.css](Lecture1/test/src/NavBar.css) thanks to the IMPORT statement above
   ```css
   .navbar {
     height: 100px;
