@@ -179,7 +179,8 @@ me.sayHello(); // <--- Hello! My name is Ben.
   ```js
   import App from './App';
   ```
-  - and is able to render it like so:
+
+- and is able to render it like so:
   ```jsx
   ReactDOM.render(
     <App />, // <------------ here index.js makes use of the imported App class
@@ -196,7 +197,8 @@ me.sayHello(); // <--- Hello! My name is Ben.
   import React, { Component } from 'react';
   class App extends Component {...}
   ```
-  ...is the same thing as:
+
+- ...is the same thing as:
   ```js
   import React from 'react';
   class App extends React.Component {...}
@@ -242,6 +244,7 @@ export default App;
     }
   }
   ```
+
 - Works in conjunction with [src/NavBar.css](Lecture1/test/src/NavBar.css) thanks to the IMPORT statement above
   ```css
   .navbar {
@@ -249,6 +252,7 @@ export default App;
     background-color: whitesmoke;
   }
   ```
+
 - And since NavBar.js imports NavBar.css, they get imported in src/App.js:
   ```jsx
   import React, {Component} from 'react';
@@ -272,31 +276,32 @@ export default App;
 
 ## [@35m45s](https://youtu.be/7QwRtGtluJk?t=35m45s) **Create Navigation Bar Buttons**
 - [NavBarButton.js](Lecture1/test/src/NavBarButton.js)
-- - - NOTE: re: the React Component:
-      - - - - When all of the code gets compiled, it gets tied together thanks to the react module, even though we don't explicitly use it in each file.
-- This syntax:
-```js
-import React, { Component } from 'react';
+- NOTE: re: the React Component:
+  When all of the code gets compiled, it gets tied together thanks to the react module, even though we don't explicitly use it in each file.
+- NOTE also that this syntax:
+  ```js
+  import React, { Component } from 'react';
 
-export default class NavBarButton extends Component {
+  export default class NavBarButton extends Component {
 
-}
-```
-- is the same as this syntax:
-```jsx
-import React, { Component } from 'react';
-
-class NavBarButton extends Component {
-  render() {
-    <button>
-      // NavBar Button
-      { this.prop.text }
-    </button>
   }
-}
+  ```
 
-export default NavBarButton;
-```
+- is the same as this syntax:
+  ```jsx
+  import React, { Component } from 'react';
+
+  class NavBarButton extends Component {
+    render() {
+      <button>
+        // NavBar Button
+        { this.prop.text }
+      </button>
+    }
+  }
+
+  export default NavBarButton;
+  ```
 
 
 
