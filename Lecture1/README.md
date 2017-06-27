@@ -39,6 +39,7 @@ const y = 10; // "constant" for when we NEVER want it to change - errors if we t
   ```
 - BOTH `let` and  `const` are BLOCK SCOPED
 - [`let` block scoping](Lecture1/letBlockScope.js)
+- the x value is "trapped" inside the block scope:
 ```js
 if (true) {
   let x = 'hi';
