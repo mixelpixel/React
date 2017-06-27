@@ -298,6 +298,7 @@ export default App;
   export default NavBarButton;
   ```
 
+***
 - NavBarButton.js BASIC idea:
 ```jsx
 import React, { Component } from 'react';
@@ -316,13 +317,12 @@ export default class NavBarButton extends Component {
 - NavBar.js needs to import the NavBarButton:
 ```jsx
 import React, { Component } from 'react';
-import NavBarButton from './NavBarButton';
+import NavBarButton from './NavBarButton'; // <---- import statement
 import './NavBar.css';
-
 
 export default class NavBar extends Component {
   render() {
-    return {
+    return { // Three buttons!
       <div className="navbar">
         <NavBarButton />
         <NavBarButton />
@@ -333,23 +333,40 @@ export default class NavBar extends Component {
 }
 ```
 
-
-
-
+## [@39m07s](https://youtu.be/7QwRtGtluJk?t=39m07s) **Change the Text on the Navigation Bar Buttons**
+- unique text for each button
+- pass in values to the NavBarButton components as attributes (like the html/css className attribute)
+- to do so, we use curly braces {}
 - NavBar.js
-```jsx
-import React, { Component } from 'react';
-import './NavBar.css';
+  ```jsx
+  import React, { Component } from 'react';
+  import './NavBar.css';
 
-export default class NavBar extends Component {
-  render() {
-    return {
-      <div className="navbar"> // <--- somewhat different attributes
-        <NavBarButton text={}'Home'} />
-        <NavBarButton text={}'FAQ'} />
-        <NavBarButton text={}'LogIn'} />
-      </div>
+  export default class NavBar extends Component {
+    render() {
+      return {
+        <div className="navbar"> // <--- somewhat different attributes
+          <NavBarButton text={'Home'} />
+          <NavBarButton text={'FAQ'} />
+          <NavBarButton text={'LogIn'} />
+        </div>
+      }
     }
   }
-}
-```
+  ```
+- NavBarButton.js
+- To put JavaScript inside of the JSX/HTML, we use curly braces {}
+  ```jsx
+  import React, { Component } from 'react';
+
+  export default class NavBarButton extends Component {
+    render() {
+      return (
+        <button>
+          { this.props.text }
+        </button>
+      );
+    }
+  }
+  ```
+- Why 'props'??? Is this a keyword?
