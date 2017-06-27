@@ -4,6 +4,7 @@
 - https://babeljs.io/
 - https://en.wikipedia.org/wiki/React_(JavaScript_library)
 - https://github.com/reactjs
+- https://jsx.github.io/
 
 # Lesson 1 - Introduction to React and ES6
 - [Lecture 1](https://youtu.be/7QwRtGtluJk)
@@ -150,7 +151,43 @@ class App extends React.Component {
   ...
 }
 ```
+#### [@26m32s](https://youtu.be/7QwRtGtluJk?t=26m32s) **Components and Render Methods**
+- every React component has a render method.
+- Render method is where the HTML is defined which ends up on screen
+- JSX: html-like code
+  - https://jsx.github.io/
+- It all gets boiled down to ES5 code...
+- ONE element gets returned, but it can have tons of stuff in it.
+```js
+class App extends Component {
+  render() {
+    return (
+      <div>
+        Hello World!
+      </div>
+    );
+  }
+}
 
+export default App;
+```
+- Files for components are usually Capitalized.js
+- e.g. NavBar.js
+```js
+import React, { Component } from 'react'; // <--- no dot slash means look in node modules folder
+import './NavBar.css'; // <--- works with className="navbar"
+
+export default class NavBar extends Component {
+  render() {
+    return {
+      <div className="navbar"> // <--- somewhat different attributes
+        ...
+      </div>
+    }
+  }
+}
+```
+WORKS WITH "NavBar.css"
 
 
 
