@@ -9,10 +9,10 @@ Lambda School tutorial: https://lambdaschool.com/pro/react
 <details><summary><b>LESSON ONE: NOTES</b></summary><p>
 
 ### LESSON ONE LECTURE NOTES
-- [@1m08s](https://youtu.be/7QwRtGtluJk?t=1m08s) **Lecture starts**
+#### [@1m08s](https://youtu.be/7QwRtGtluJk?t=1m08s) **Lecture starts**
 - https://jsbin.com/
 - ES6 and Babel to use ECMAScript features
-- `let` and `const` - say goodbye to `var`
+- **`let` and `const` - say goodbye to `var`**
 ```js
 let x = 5;    // let says we're creating a variable which can be changed later on
 const y = 10; // defining a constant and we NEVER want it to change - an error appears if we try and change it
@@ -68,7 +68,8 @@ let x = 5;
 x++;
 console.log(x); // ---> 6
 ```
-
+- Don't use `var`. Always use `const`, unless it has to change, then use `let`
+#### [@7m](https://youtu.be/7QwRtGtluJk?t=7m) **Babel**
 
 
 </p></details>
