@@ -370,3 +370,20 @@ export default class NavBar extends Component {
   }
   ```
 - Why 'props'??? Is this a keyword?
+
+## [@42m36s](https://youtu.be/7QwRtGtluJk?t=42m36s) **Summary**
+- let
+- const
+- classes
+- create react app
+- string templates
+- importing exporting
+- nesting components
+- jsx
+- return and render
+- boilerplate
+- etc.
+- homework
+- upcoming in next lecture: state, more complicated components, etc.
+
+# fin
