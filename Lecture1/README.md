@@ -155,7 +155,7 @@ me.sayHello(); // <--- Hello! My name is Ben.
 
 ## [@16m47s](https://youtu.be/7QwRtGtluJk?t=16m47s) **React App Boilerplate**
 - src/App.js - handles the default display page
-- index.js - "root" or "head" of the application: takes react components and passes them to the DOM
+- src/index.js - "root" or "head" of the application: takes react components and passes them to the DOM
 - React: creating custom html elements, building reusable elements, or, "components"
 - one component is the entire page. Inside of that there's a header, and a body. In the header, there's a center, left and right set of buttons, etc. nested inside of each other.
 - index.js takes App.js and sticks it all into the DOM (such that the HTML is structured in a way that the JavaScript can communicate with it and interact with it at runtime)
@@ -175,7 +175,7 @@ me.sayHello(); // <--- Hello! My name is Ben.
   - e.g. `import <something> from './file_path/file';`
   - NOTE: `'./file_path/file';` defaults to .js, unless specified otherwise
 - `export default App` gives the file importing App.js access to read in the contents of the App class.
-  - e.g. project/index.js accesses the App.js export with:
+  - e.g. project/src/index.js accesses the App.js export with:
   ```js
   import App from './App';
   ```
@@ -209,6 +209,7 @@ me.sayHello(); // <--- Hello! My name is Ben.
   - https://jsx.github.io/
 - It all gets compiled down to ES5 code...
 - ONE "root" element gets returned, but it can have tons of stuff in it.
+- e.g. [src/App.js](Lecture1/test/src/App.js)
 ```jsx
 class App extends Component {
   render() {
@@ -224,8 +225,8 @@ export default App;
 ```
 
 ## [@29m39s](https://youtu.be/7QwRtGtluJk?t=29m39s) **Create a Navigation Bar**
-- Files for components are usually Capitalized.js
-- e.g. [NavBar.js](Lecture1/test/NavBar.js)
+- Files for components are usually Capitalized.js, Capitalized.css, etc.
+- e.g. [NavBar.js](Lecture1/test/src/NavBar.js)
   ```jsx
   import React, { Component } from 'react'; // <--- no dot slash means look in node modules folder
   import './NavBar.css'; // <--- works with className="navbar"
@@ -240,32 +241,39 @@ export default App;
     }
   }
   ```
-- Works in conjunction with "NavBar.css"
+- Works in conjunction with [NavBar.css](Lecture1/test/src/NavBar.css) thanks to the IMPORT statement above
   ```css
   .navbar {
     height: 100px;
     background-color: whitesmoke;
   }
   ```
-AND THIS:
-```js
-import React, {Component} from 'react';
-import NavBar from './NavBar' // <--- defaults to .js
-import logo from './logo.svg';
-import './App.css';
+- And since NavBar.js imports NavBar.css, they get imported in src/App.js:
+  ```js
+  import React, {Component} from 'react';
+  import NavBar from './NavBar' // <--- NavBar.js imported by App.js (defaults to .js)
+  import logo from './logo.svg';
+  import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <NavBar /> // <--- all html elements can be self-closing
-      </div>
-    );
+  class App extends Component {
+    render() {
+      return (
+        <div>
+          <NavBar /> // <--- all html elements can be self-closing
+        </div>
+      );
+    }
   }
-}
 
-export default App;
-```
+  export default App;
+  ```
+
+
+
+
+
+
+
 - NavBarButton.js
 ```js
 import React, { Component } from 'react';
