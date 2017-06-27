@@ -25,7 +25,7 @@ const y = 10; // "constant" for when we NEVER want it to change - errors if we t
   ```
 
   - [ES6 style Block Scope](lecture1_scripts/blockScope.js)
-  - Can think of ES6 style as if all the code is happening _inside_ the same function.
+  - We can think of ES6 style as if all the code is happening _inside_ the same function.
   - The scope is contained inside the above `if` statement (and also in `for-loops`) e.g.
   ```js
   function foo() {
