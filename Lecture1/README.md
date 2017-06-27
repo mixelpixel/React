@@ -1,65 +1,75 @@
 # LESSON ONE LECTURE NOTES
-## [@1m08s](https://youtu.be/7QwRtGtluJk?t=1m08s) **Lecture 1 starts**
+## [@18s](https://youtu.be/7QwRtGtluJk?t=18s) **Lecture 1 starts**
+- ES6 vs ES5
+- React uses ES6
+- How to get a simple React app going
+- JSX
+- React syntax, etc.
 - https://jsbin.com/ - Pull up the JavaScript menu and select ES6/Babel
 - ES6 and Babel to use NEW and EXCITING ECMAScript features
-- **`let` and `const` - say goodbye to `var`**
+
+## [@1m44s](https://youtu.be/7QwRtGtluJk?t=1m44s) **`let` & `const` vs. `var`**
+- in ES6 say goodbye to `var`!
 ```js
-let x = 5;    // let says we're creating a variable which can be changed later on
-const y = 10; // define a constant when we NEVER want it to change - errors if we try
+let x = 5;    // "let" for when we're creating a variable which can be changed later on
+const y = 10; // "constant" for when we NEVER want it to change - errors if we try
 ```
-- [JS "block" scoping](Lecture1/ifTrue.js)
+- [JS/ES5 "block" scoping](Lecture1/ifTrue.js), e.g. the following is all in the same scope:
 ```js
 if (true) {
   var x = 'hi';
   console.log(x); // ---> hi
-}                 // ---> function scope remains so x = 'hi'
+}                 // ---> function scope remains so x == 'hi'
 console.log(x);   // ---> hi
 ```
-- [ES6 Block Scope](Lecture1/blockScope.js)
-  - Can think of ES6 style as if all the code is happening inside the same function, e.g.
-  - (is it correct to say that it is ES6?)
+  - [ES6 style Block Scope](Lecture1/blockScope.js)
+  - Can think of ES6 style as if all the code is happening _inside_ the same function.
+  - The scope is contained inside the above `if` statement (and also in `for-loops`) e.g.
   ```js
   function foo() {
     if (true) {
       var x = 'hi';
-      console.log(x);
-    }
-    console.log(x);
+      console.log(x); // ---> x == hi
+    }                 // ---> function scope remains, so x == 'hi'
+    console.log(x);   // ---> x == hi
   }
-  foo();          // ---> hi \n hi
-  console.log(x); // <--- ReferenceError!!!
+  foo();              // ---> hi
+                      // ---> hi
+  console.log(x);     // <--- ReferenceError!!!
   ```
 - BOTH `let` and  `const` are BLOCK SCOPED
-  - [`let` block scoping](Lecture1/letBlockScope.js)
-  ```js
-  if (true) {
-    let x = 'hi';
-    console.log(x) // ---> hi
-  }
+- [`let` block scoping](Lecture1/letBlockScope.js)
+```js
+if (true) {
+  let x = 'hi';
+  console.log(x) // ---> hi
+}
 
-  console.log(x)   // <--- ReferenceError
-  ```
-  - [`const` block scoping](Lecture1/constBlockScope.js)
-  ```js
-  if (true) {
-    const x = 'hi';
-    console.log(x) // ---> hi
-  }
+console.log(x)   // <--- ReferenceError
+```
+- [`const` block scoping](Lecture1/constBlockScope.js)
+- the x value is "trapped" inside the block scope:
+```js
+if (true) {
+  const x = 'hi';
+  console.log(x) // ---> hi
+}
 
-  console.log(x)   // <--- ReferenceError
-  ```
+console.log(x)   // <--- ReferenceError
+```
 - `const` is immutable, e.g.
 ```js
 const x = 5;
-x++;         // <--- ERROR!!!
+x++;            // <--- ERROR!!!
 ```
-- compare to `let`
+- `let` is mutable, e.g.
 ```js
 let x = 5;
 x++;
 console.log(x); // ---> 6
 ```
 - Don't use `var`. Always use `const`, unless it has to change, then use `let`
+
 ## [@7m](https://youtu.be/7QwRtGtluJk?t=7m) **Babel**
 - https://babeljs.io/
 - Babel takes the ES6 code and compiles it
