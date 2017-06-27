@@ -197,7 +197,7 @@ me.sayHello(); // <--- Hello! My name is Ben.
   class App extends Component {...}
   ```
   ...is the same thing as:
-  ```jsx
+  ```js
   import React from 'react';
   class App extends React.Component {...}
   ```
