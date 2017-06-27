@@ -14,6 +14,7 @@
 let x = 5;    // "let" for when we're creating a variable which can be changed later on
 const y = 10; // "constant" for when we NEVER want it to change - errors if we try
 ```
+
 - [JS/ES5 "block" scoping](Lecture1/ifTrue.js), e.g. the following is all in the same scope:
   ```js
   if (true) {
@@ -22,6 +23,7 @@ const y = 10; // "constant" for when we NEVER want it to change - errors if we t
   }                 // ---> function scope remains so x == 'hi'
   console.log(x);   // ---> hi
   ```
+
   - [ES6 style Block Scope](Lecture1/blockScope.js)
   - Can think of ES6 style as if all the code is happening _inside_ the same function.
   - The scope is contained inside the above `if` statement (and also in `for-loops`) e.g.
@@ -37,9 +39,9 @@ const y = 10; // "constant" for when we NEVER want it to change - errors if we t
                       // ---> hi
   console.log(x);     // <--- ReferenceError!!!
   ```
+
 - BOTH `let` and  `const` are BLOCK SCOPED
-- [`let` block scoping](Lecture1/letBlockScope.js)
-- the x value is "trapped" inside the block scope:
+- [`let` block scoping](Lecture1/letBlockScope.js) - the x value is "trapped" inside the block scope:
 ```js
 if (true) {
   let x = 'hi';
@@ -48,8 +50,8 @@ if (true) {
 
 console.log(x)   // <--- ReferenceError
 ```
-- [`const` block scoping](Lecture1/constBlockScope.js)
-- the x value is "trapped" inside the block scope:
+
+- [`const` block scoping](Lecture1/constBlockScope.js) - the x value is "trapped" inside the block scope:
 ```js
 if (true) {
   const x = 'hi';
@@ -58,75 +60,115 @@ if (true) {
 
 console.log(x)   // <--- ReferenceError
 ```
+
 - `const` is immutable, e.g.
 ```js
 const x = 5;
 x++;            // <--- ERROR!!!
 ```
+
 - `let` is mutable, e.g.
 ```js
 let x = 5;
 x++;
 console.log(x); // ---> 6
 ```
-- Don't use `var`. Always use `const`, unless it has to change, then use `let`
+
+- Don't use `var`.
+- BEST PRACTICE:  Always use `const`, unless it has to change, then use `let`
 
 ## [@7m](https://youtu.be/7QwRtGtluJk?t=7m) **Babel**
 - https://babeljs.io/
-- Babel takes the ES6 code and compiles it
+- Babel takes the ES6 code and compiles it to ES5/JavaScript for browsers
 
-## [@7m44s](https://youtu.be/7QwRtGtluJk?t=7m44s) **Constructors and Syntactic Sugar**
-- Constructors:
+## [@7m44s](https://youtu.be/7QwRtGtluJk?t=7m44s) **Constructors, Syntactic Sugar and Class**
+- ES5 constructor functions:
 ```js
 function User(options) {
   this.name     = options.name;
   this.password = options.password;
 }
 const me = new User({name: 'Ben', password: '12345'});
-
-console.log(me)
+console.log(me) // ---> User { name: 'Ben', password: '12345' }
+            //also ---> [object Object] { name: 'Ben', password: '12345' }
 ```
-- NEW Constructor syntax BASIC:
+
+- ES6 uses a `class` keyword
+- Basic syntax:
 ```js
-class User(options) {
+class User {
   sayHello() {
     console.log('hello!');
   }
 }
-const me = new User({
-  name: 'Ben',      // <--- ignored for right now
-  password: '12345' // <--- ignored for right now
-});
-
+const me = new User;
+// const me = new User(); // <--- also works with ()
 me.sayHello(); // <--- hello!
 ```
-- NEW Constructor with construction and text formatting:
+
+- NEW `constructor` property:
 ```js
-class User(options) {
+class User {
   constructor(options) {
     this.name     = options.name;
     this.password = options.password;
   }
 
   sayHello() {
-    // console.log('Hello! My name is ' + this.name + '.');
-    console.log(`Hello! My name is $(this.name).`); // NEW FORMATTING WITH BACKTICKS!!
+    console.log('Hello! My name is ' + this.name + '.');
   }
 }
 const me = new User({
   name: 'Ben',
   password: '12345'
 });
+me.sayHello(); // <--- Hello! My name is Ben.
+```
 
+## [@11m51s](https://youtu.be/7QwRtGtluJk?t=11m51s) **BackTick Text Formatting**
+```js
+class User {
+  constructor(options) {
+    this.name     = options.name;
+    this.password = options.password;
+  }
+
+  sayHello() {
+    // console.log('Hello! My name is ' + this.name + '.'); // NO MORE!
+    console.log(`Hello! My name is $(this.name).`); // NEW FORMATTING WITH BACKTICKS!!
+    //          ^                  ^^^^^^^^^^^^ ^
+  }
+}
+const me = new User({
+  name: 'Ben',
+  password: '12345'
+});
 me.sayHello(); // <--- Hello! My name is Ben.
 ```
 
 ## [@13m23s](https://youtu.be/7QwRtGtluJk?t=13m23s) **Create React Apps**
 - `sudo npm install -g create-react-app`
 - `-g` makes it global
-- once it's globally, the `create-react-app <app name>` command works!
-- localhost:3000
-- ES6 class
+- once it's set up globally, the `create-react-app <app name>` command works!
+- builds a basic boiler plate web app
+- `npm start` default uses localhost:3000 to host web apps
+
+## [@16m47s](https://youtu.be/7QwRtGtluJk?t=16m47s) **React App Boilerplate**
+- src/App.js - handles the default display page
+- index.js - "root" or "head" of the application: takes react components and passes them to the DOM
+- React: creating custom html elements, building reusable elements, or, "components"
+- one component is the entire page. Inside of that there's a header, and a body. In the header, there's a center, left and right set of buttons, etc. nested inside of each other.
+- index.js takes App.js and sticks it all into the DOM (such that the HTML is structured in a way that the JavaScript can communicate with it and interact with it at runtime)
+- App.js uses an ES6 class, it imports some stuff and exports the App class so it can be used elsewhere:
+  ```js
+  import React, { Component } from 'react';
+  import logo from './logo.svg'
+  import './App.css';
+
+  class App extends Component { ... }
+
+  export default App;
+  ```
 
 ## [@20m48s](https://youtu.be/7QwRtGtluJk?t=20m48s) **Importing and Exporting**
 - Instead of one big file for a web page, you can use several files - more manageable.
