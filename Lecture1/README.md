@@ -15,7 +15,7 @@ let x = 5;    // "let" for when we're creating a variable which can be changed l
 const y = 10; // "constant" for when we NEVER want it to change - errors if we try
 ```
 
-- [JS/ES5 "block" scoping](Lecture1/ifTrue.js), e.g. the following is all in the same scope:
+- [JS/ES5 "block" scoping](Lecture1/lecture1_scripts/ifTrue.js), e.g. the following is all in the same scope:
   ```js
   if (true) {
     var x = 'hi';
@@ -24,7 +24,7 @@ const y = 10; // "constant" for when we NEVER want it to change - errors if we t
   console.log(x);   // ---> hi
   ```
 
-  - [ES6 style Block Scope](Lecture1/blockScope.js)
+  - [ES6 style Block Scope](Lecture1/lecture1_scripts/blockScope.js)
   - Can think of ES6 style as if all the code is happening _inside_ the same function.
   - The scope is contained inside the above `if` statement (and also in `for-loops`) e.g.
   ```js
@@ -41,7 +41,7 @@ const y = 10; // "constant" for when we NEVER want it to change - errors if we t
   ```
 
 - BOTH `let` and  `const` are BLOCK SCOPED
-- [`let` block scoping](Lecture1/letBlockScope.js) - the x value is "trapped" inside the block scope:
+- [`let` block scoping](Lecture1/lecture1_scripts/letBlockScope.js) - the x value is "trapped" inside the block scope:
 ```js
 if (true) {
   let x = 'hi';
@@ -51,7 +51,7 @@ if (true) {
 console.log(x)   // <--- ReferenceError
 ```
 
-- [`const` block scoping](Lecture1/constBlockScope.js) - the x value is "trapped" inside the block scope:
+- [`const` block scoping](Lecture1/lecture1_scripts/constBlockScope.js) - the x value is "trapped" inside the block scope:
 ```js
 if (true) {
   const x = 'hi';
