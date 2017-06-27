@@ -39,7 +39,7 @@ console.log(x);   // ---> hi
 
   console.log(x)   // <--- ReferenceError
   ```
-  - [`const`](Lecture1/constBlockScope.js)
+  - [`const` block scoping](Lecture1/constBlockScope.js)
   ```js
   if (true) {
     const x = 'hi';
