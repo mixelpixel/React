@@ -1,5 +1,9 @@
 # Lambda School: React
-Lambda School tutorial: https://lambdaschool.com/pro/react
+- Lambda School tutorial: https://lambdaschool.com/pro/react
+- https://facebook.github.io/react/
+- https://babeljs.io/
+- https://en.wikipedia.org/wiki/React_(JavaScript_library)
+- https://github.com/reactjs
 
 # Lesson 1 - Introduction to React and ES6
 - [Lecture 1](https://youtu.be/7QwRtGtluJk)
@@ -11,7 +15,7 @@ Lambda School tutorial: https://lambdaschool.com/pro/react
 ### LESSON ONE LECTURE NOTES
 #### [@1m08s](https://youtu.be/7QwRtGtluJk?t=1m08s) **Lecture starts**
 - https://jsbin.com/
-- ES6 and Babel to use ECMAScript features
+- ES6 and Babel to use NEW and EXCITING ECMAScript features
 - **`let` and `const` - say goodbye to `var`**
 ```js
 let x = 5;    // let says we're creating a variable which can be changed later on
@@ -70,6 +74,62 @@ console.log(x); // ---> 6
 ```
 - Don't use `var`. Always use `const`, unless it has to change, then use `let`
 #### [@7m](https://youtu.be/7QwRtGtluJk?t=7m) **Babel**
+- https://babeljs.io/
+- Babel takes the ES6 code and compiles it
+#### [@7m44s](https://youtu.be/7QwRtGtluJk?t=7m44s) **Constructors and Syntactic Sugar**
+- Constructors:
+```js
+function User(options) {
+  this.name     = options.name;
+  this.password = options.password;
+}
+const me = new User({name: 'Ben', password: '12345'});
+
+console.log(me)
+```
+- NEW Constructor syntax BASIC:
+```js
+class User(options) {
+  sayHello() {
+    console.log('hello!');
+  }
+}
+const me = new User({
+  name: 'Ben',      // <--- ignored for right now
+  password: '12345' // <--- ignored for right now
+});
+
+me.sayHello(); // <--- hello!
+```
+- NEW Constructor with construction and text formatting:
+```js
+class User(options) {
+  constructor(options) {
+    this.name     = options.name;
+    this.password = options.password;
+  }
+
+  sayHello() {
+    // console.log('Hello! My name is ' + this.name + '.');
+    console.log(`Hello! My name is $(this.name).`); // NEW FORMATTING WITH BACKTICKS!!
+  }
+}
+const me = new User({
+  name: 'Ben',
+  password: '12345'
+});
+
+me.sayHello(); // <--- Hello! My name is Ben.
+```
+#### [@13m23s](https://youtu.be/7QwRtGtluJk?t=13m23s) **Create React Apps**
+- `sudo npm install -g create-react-app`
+- `-g` makes it global
+- once it's globally, the `create-react-app <app name>` command works!
+- localhost:3000
+
+
+
+
 
 
 </p></details>
