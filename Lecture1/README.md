@@ -172,26 +172,18 @@ me.sayHello(); // <--- Hello! My name is Ben.
 
 ## [@20m48s](https://youtu.be/7QwRtGtluJk?t=20m48s) **Importing and Exporting**
 - Instead of one big file for a web page, you can use several files - more manageable.
-- e.g. import <something> from './file_path';
+- e.g. import <something> from './file_path'; - defaults to .js, unless specified otherwise
 - e.g. export default App
-- destructured import statement, e.g.
-```js
-import React, { Component } from 'react';
-...
-
-class App extends Component {
-  ...
-}
-```
-  IS THE SAME THINGS AS:
-```js
-import React from 'react';
-...
-
-class App extends React.Component {
-  ...
-}
-```
+- de-structured import statement, e.g.
+  ```js
+  import React, { Component } from 'react';
+  class App extends Component {...}
+  ```
+  ...is the same thing as:
+  ```js
+  import React from 'react';
+  class App extends React.Component {...}
+  ```
 
 ## [@26m32s](https://youtu.be/7QwRtGtluJk?t=26m32s) **Components and Render Methods**
 - every React component has a render method.
