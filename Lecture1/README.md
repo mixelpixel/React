@@ -259,6 +259,7 @@ export default App;
   class App extends Component {
     render() {
       return (
+         // NOTE that all html elements can be self-closing
         <div>
           <NavBar />
         </div>
