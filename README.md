@@ -9,6 +9,67 @@ Lambda School tutorial: https://lambdaschool.com/pro/react
 <details><summary><b>LESSON ONE: NOTES</b></summary><p>
 
 ### LESSON ONE LECTURE NOTES
+- [@1m08s](https://youtu.be/7QwRtGtluJk?t=1m08s) **Lecture starts**
+- https://jsbin.com/
+  - ES6 and Babel to use ECMAScript features
+  - `let` and `const` - say goodbye to `var`
+  ```js
+  let x = 5;    // let says we're creating a variable which can be changed later on
+  const y = 10; // defining a constant and we NEVER want it to change - an error appears if we try and change it
+  ```
+  - [JS "block" scoping](ifTrue.js)
+  ```js
+  if (true) {
+    var x = 'hi';
+    console.log(x); // ---> hi
+  }                 // ---> function scope remains so x = 'hi'
+  console.log(x);   // ---> hi
+  ```
+  - [Block Scope](blockScope.js)
+  - Can think of it as if all the code is happening inside the same function
+  ```js
+  function foo() {
+    if (true) {
+      var x = 'hi';
+      console.log(x);
+    }
+    console.log(x);
+  }
+  foo();          // ---> hi \n hi
+  console.log(x); // <--- ReferenceError!!!
+  ```
+  - BOTH `let` and  `const` are BLOCK SCOPED
+  - `let`
+  ```js
+  if (true) {
+    let x = 'hi';
+    console.log(x) // ---> hi
+  }
+
+  console.log(x)   // <--- ReferenceError
+  ```
+  - `const`
+  ```js
+  if (true) {
+    const x = 'hi';
+    console.log(x) // ---> hi
+  }
+
+  console.log(x)   // <--- ReferenceError
+  ```
+  - `const` is immutable, e.g.
+  ```js
+  const x = 5;
+  x++;         // <--- ERROR!!!
+  ```
+  - compare to `let`
+  ```js
+  let x = 5;
+  x++;
+  console.log(x); // ---> 6
+  ```
+
+
 
 </p></details>
 
