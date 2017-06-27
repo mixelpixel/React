@@ -6,7 +6,7 @@
 - **`let` and `const` - say goodbye to `var`**
 ```js
 let x = 5;    // let says we're creating a variable which can be changed later on
-const y = 10; // defining a constant and we NEVER want it to change - an error appears if we try and change it
+const y = 10; // define a constant when we NEVER want it to change - errors if we try
 ```
 - [JS "block" scoping](Lecture1/ifTrue.js)
 ```js
