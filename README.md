@@ -13,7 +13,7 @@ Lambda School tutorial: https://lambdaschool.com/pro/react
 </p></details>
 
 ***
-# Lesson 2 -
+# Lesson 2 - More JavaScript and ES6 features
 - [Lecture 2](https://youtu.be/FQPowZglpJA)
 - [Homework Assignment 2](https://github.com/SunJieMing/LS-Pro-React-II)
 - [Completed Homework Assignment 2]()
@@ -25,7 +25,7 @@ Lambda School tutorial: https://lambdaschool.com/pro/react
 </p></details>
 
 ***
-# Lesson 3 -
+# Lesson 3 - ???
 - [Lecture 3](https://youtu.be/ULx7gruIh20)
 - [Homework Assignment 3](https://github.com/SunJieMing/LS-Pro-React-III)
 - [Completed Homework Assignment 3]()
@@ -37,7 +37,7 @@ Lambda School tutorial: https://lambdaschool.com/pro/react
 </p></details>
 
 ***
-# Lesson 4 -
+# Lesson 4 - ???
 - [Lecture 4](https://youtu.be/vi8oJD5EcX8)
 - [Homework Assignment 4](https://github.com/SunJieMing/LS-Pro-React-IV)
 - [Completed Homework Assignment 4]()
@@ -49,7 +49,7 @@ Lambda School tutorial: https://lambdaschool.com/pro/react
 </p></details>
 
 ***
-# Lesson 5 -
+# Lesson 5 - ???
 - [Lecture 5](https://youtu.be/Mnfo3aCnri8)
 - [Homework Assignment 5](https://github.com/SunJieMing/LS-Pro-React-V)
 - [Completed Homework Assignment 5]()
