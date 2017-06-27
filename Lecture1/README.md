@@ -180,7 +180,7 @@ me.sayHello(); // <--- Hello! My name is Ben.
   import App from './App';
   ```
   - and is able to render it like so:
-  ```js
+  ```jsx
   ReactDOM.render(
     <App />, // <------------ here index.js makes use of the imported App class
     document.getElementById('root')
