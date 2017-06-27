@@ -276,7 +276,7 @@ export default App;
 
 ## [@35m45s](https://youtu.be/7QwRtGtluJk?t=35m45s) **Create Navigation Bar Buttons**
 - [NavBarButton.js](Lecture1/test/src/NavBarButton.js)
-- NOTE: re: the React Component:
+- NOTE: about the React Component:
   When all of the code gets compiled, it gets tied together thanks to the react module, even though we don't explicitly use it in each file.
 - NOTE also that this syntax:
   ```js
@@ -288,27 +288,58 @@ export default App;
   ```
 
 - is the same as this syntax:
-  ```jsx
+  ```js
   import React, { Component } from 'react';
 
   class NavBarButton extends Component {
-    render() {
-      <button>
-        // NavBar Button
-        { this.prop.text }
-      </button>
-    }
+
   }
 
   export default NavBarButton;
   ```
 
+- NavBarButton.js BASIC idea:
+```jsx
+import React, { Component } from 'react';
+
+export default class NavBarButton extends Component {
+  render() {
+    return (
+      <button>
+        NavBar Button
+      </button>
+    );
+  }
+}
+```
+
+- NavBar.js needs to import the NavBarButton:
+```jsx
+import React, { Component } from 'react';
+import NavBarButton from './NavBarButton';
+import './NavBar.css';
+
+
+export default class NavBar extends Component {
+  render() {
+    return {
+      <div className="navbar"> // <--- somewhat different attributes
+        <NavBarButton />
+        <NavBarButton />
+        <NavBarButton />
+      </div>
+    }
+  }
+}
+```
+
+
 
 
 - NavBar.js
-```js
-import React, { Component } from 'react'; // <--- no dot slash means look in node modules folder
-import './NavBar.css'; // <--- works with className="navbar"
+```jsx
+import React, { Component } from 'react';
+import './NavBar.css';
 
 export default class NavBar extends Component {
   render() {
