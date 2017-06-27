@@ -172,10 +172,27 @@ me.sayHello(); // <--- Hello! My name is Ben.
 
 ## [@20m48s](https://youtu.be/7QwRtGtluJk?t=20m48s) **Importing and Exporting**
 - Instead of one big file for a web page, you can use several files - more manageable.
-- e.g. import <something> from './file_path'; - defaults to .js, unless specified otherwise
-- e.g. export default App
-- de-structured import statement, e.g.
+  - e.g. `import <something> from './file_path/file';`
+  - NOTE: `'./file_path/file';` defaults to .js, unless specified otherwise
+- `export default App` gives the file importing App.js access to read in the contents of the App class.
+  - e.g. project/index.js accesses the App.js export with:
   ```js
+  import App from './App';
+  ```
+  - and is able to render it like so:
+  ```js
+  ReactDOM.render(
+    <App />, // <------------ here index.js makes use of the imported App class
+    document.getElementById('root')
+  );
+  ```
+
+## [@24m53s](https://youtu.be/7QwRtGtluJk?t=24m53s) **React Components and Extending them**
+- `class App extends Component` does just what it says, class App extends the functions/features/etc. "inherited" from the React Component(s) - App adds to/builds upon/extends the React Component
+- Don't mess with the files in `project/node_modules`
+- `import React, { Component } from 'react';` imports a React component from the 'react' library in the node_modules directory
+- de-structured import statement, e.g.
+  ```jsx
   import React, { Component } from 'react';
   class App extends Component {...}
   ```
