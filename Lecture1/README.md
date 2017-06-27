@@ -30,7 +30,7 @@ console.log(x);   // ---> hi
   console.log(x); // <--- ReferenceError!!!
   ```
 - BOTH `let` and  `const` are BLOCK SCOPED
-  - `let`
+  - [`let` block scoping](Lecture1/letBlockScope.js)
   ```js
   if (true) {
     let x = 'hi';
@@ -39,7 +39,7 @@ console.log(x);   // ---> hi
 
   console.log(x)   // <--- ReferenceError
   ```
-  - `const`
+  - [`const`](Lecture1/constBlockScope.js)
   ```js
   if (true) {
     const x = 'hi';
