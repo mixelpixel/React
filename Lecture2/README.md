@@ -34,10 +34,11 @@ numbers.forEach((num, i) => {
 #### [@4m38s](https://youtu.be/FQPowZglpJA?t=4m38s)
 ```js
 let numbers = [ 1, 2, 3, 4, 5 ];
-// maps duplicate value from numbers array
+// map duplicates value from numbers array
 let doubleNums = numbers.map(num => num * 2);
 // ---> [ 2, 4, 6, 8, 10 ]
 console.log(doubleNums)
 ```
-- Without curly braces a single expression is returned by default:
+- Without curly braces a single statement is returned by default:
 - syntax: `(variable_name(s) => single_expression_return_value )`
+- note on map: doesn't modify the original array, just makes a copy
