@@ -54,30 +54,30 @@
   console.log(doubleNums)
   ```
 
-  #### [@8m45s](https://youtu.be/FQPowZglpJA?t=8m45s) **Lexical This**
-  - **Functional Notation**
-    - `this` is bound to the function
-    ```js
-    const numbers = [ 1, 2, 3, 4, 5 ];
-    // prints each array item
-    numbers.forEach(function (num) {
-      console.log(this);
-    })
-    ```
+## [@8m45s](https://youtu.be/FQPowZglpJA?t=8m45s) **Lexical This**
+- **Functional Notation**
+  - `this` is bound to the function
+  ```js
+  const numbers = [ 1, 2, 3, 4, 5 ];
+  // prints each array item
+  numbers.forEach(function (num) {
+    console.log(this);
+  })
+  ```
 
-  - **Arrow Notation**
-    - an arrow function doesn't have it's own `this`
-    - the arrow function's `this` references to it's parent, either global or the enclosing function's `this`
-    ```js
-    const numbers = [ 1, 2, 3, 4, 5 ];
-    // prints each array item
-    numbers.forEach(num => {
-      console.log(this);
-    })
-    ```
-    - e.g. the arrow function inside foo() refers to foo()'s `this`
-    ```js
-    function foo() { this }    // <--- references inside the function
+- **Arrow Notation**
+  - an arrow function doesn't have it's own `this`
+  - the arrow function's `this` references to it's parent, either global or the enclosing function's `this`
+  ```js
+  const numbers = [ 1, 2, 3, 4, 5 ];
+  // prints each array item
+  numbers.forEach(num => {
+    console.log(this);
+  })
+  ```
+  - e.g. the arrow function inside foo() refers to foo()'s `this`
+  ```js
+  function foo() { this }    // <--- references inside the function
 
-    const bar = () => { this } // <--- references to the global
-    ```
+  const bar = () => { this } // <--- references to the global
+  ```
