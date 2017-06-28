@@ -33,9 +33,9 @@
 
   #### [@4m38s](https://youtu.be/FQPowZglpJA?t=4m38s)
   ```js
-  let numbers = [ 1, 2, 3, 4, 5 ];
+  const numbers = [ 1, 2, 3, 4, 5 ];
   // map duplicates value from numbers array
-  let doubleNums = numbers.map(num => num * 2);
+  const doubleNums = numbers.map(num => num * 2);
   // ---> [ 2, 4, 6, 8, 10 ]
   console.log(doubleNums)
   ```
