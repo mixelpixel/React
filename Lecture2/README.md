@@ -9,7 +9,7 @@
 - The Arrow and lexical `this`:
   > Unlike functions, arrows share the same lexical `this` as their surrounding code. If an arrow is inside another function, it shares the “arguments” variable of its parent function.
 
-## [@2m56s](https://youtu.be/FQPowZglpJA?t=2m56s) **Arrow Function Examples**
+  #### [@2m56s](https://youtu.be/FQPowZglpJA?t=2m56s) **Arrow Function Examples**
   ```js
   const numbers = [ 1, 2, 3, 4, 5 ];
   // prints each array item
@@ -43,7 +43,7 @@
   - syntax: `(variable_name(s) => single_expression_return_value )`
   - note on map: doesn't modify the original array, just makes a copy
 
-  #### [@7m50s](https://youtu.be/FQPowZglpJA?t=7m50s) **The equivalent functional version**
+  #### [@7m50s](https://youtu.be/FQPowZglpJA?t=7m50s) **The equivalent functional version of the previous example**
   ```js
   const numbers = [ 1, 2, 3, 4, 5 ];
   // map duplicates value from numbers array
