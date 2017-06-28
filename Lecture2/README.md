@@ -55,6 +55,7 @@
   ```
 
 ## [@8m45s](https://youtu.be/FQPowZglpJA?t=8m45s) **Lexical `this`**
+- example: https://jsbin.com/xivinos/10/edit?js,console
 - **Functional Notation**
   - `this` is bound to the function
   ```js
