@@ -11,30 +11,34 @@
 
 ## [@2m56s](https://youtu.be/FQPowZglpJA?t=2m56s) **Arrow Function Examples**
 ```js
-const numbers = [ 1, 2, 3, 4, 5 ]
+const numbers = [ 1, 2, 3, 4, 5 ];
 
 numbers.forEach(num => {
   console.log(num);
 })
 ```
+- syntax: `argument arrow {curly braces}`
 
+#### [@4m1s](https://youtu.be/FQPowZglpJA?t=4m1s)
 ```js
-((multiple, variables) => { side_effect_or_return_value; })
-```
-- OT: how does `=>` know `i` is the index? (it's a [forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach?v=example) thing: second parameter is index.)
-
-```js
-const numbers = [ 1, 2, 3, 4, 5 ]
+const numbers = [ 1, 2, 3, 4, 5 ];
 
 numbers.forEach((num, i) => {
   console.log(num, i);
 })
 ```
+- syntax `((multiple, arguments, passed, in) => { side_effect_or_return_value; })`
+- OT: Q: how does `=>` know `i` is the index?
+  - A: it doesn't, it's a [forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach?v=example) thing: the second parameter is index.)
 
+#### [@4m38s](https://youtu.be/FQPowZglpJA?t=4m38s)
 ```js
-let numbers = [ 1, 2, 3, 4, 5 ]
+let numbers = [ 1, 2, 3, 4, 5 ];
 
-let mapNumbers = numbers.map(num => num * 2)
+let doubleNums = numbers.map(num => num * 2);
 
-console.log(mapNumbers)
+console.log(doubleNums)
 ```
+
+- Without curly braces a single expression is returned by default:
+- syntax: `(variable_name(s) => single_expression_return_value )`
