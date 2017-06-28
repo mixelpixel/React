@@ -12,7 +12,7 @@
 - [Lecture 1](https://youtu.be/7QwRtGtluJk)
 - [Lecture 1 NOTES](Lecture1/README.md)
 - [Homework Assignment 1](https://github.com/SunJieMing/LS-Pro-React-I)
-- [Completed Homework Assignment 1]()
+- [Completed Homework Assignment 1](https://github.com/mixelpixel/LS-Pro-React-I)
 
 # Lesson 2 - More JavaScript and ES6 features
 - [Lecture 2](https://youtu.be/FQPowZglpJA)
