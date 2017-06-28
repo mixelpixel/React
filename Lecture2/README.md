@@ -110,19 +110,20 @@ boundSayHi(); // ---> Ben
 ```
 
 ## [@11m55s](https://youtu.be/FQPowZglpJA?t=10m25s) **Bind use cases**
-- an example of what we are used to:
 ```js
 const me = {
   name: 'Ben'
 };
 
-me.sayHi = function() {
+me.sayHi = function() {           // <--- what we've seen before
   console.log(this.name)
 }
 
-me.sayHi(); // ---> Ben
-```
+me.sayHi();   // ---> Ben
 
-```js
+var boundSayHi = me.sayHi.bind({  // <--- the bind() method
+  name: 'Austen'
+});
 
+boundSayHi(); // ---> Austen
 ```
