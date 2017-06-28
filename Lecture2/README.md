@@ -12,7 +12,7 @@
 ## [@2m56s](https://youtu.be/FQPowZglpJA?t=2m56s) **Arrow Function Examples**
 ```js
 const numbers = [ 1, 2, 3, 4, 5 ];
-
+// prints each array item
 numbers.forEach(num => {
   console.log(num);
 })
@@ -22,7 +22,7 @@ numbers.forEach(num => {
 #### [@4m1s](https://youtu.be/FQPowZglpJA?t=4m1s)
 ```js
 const numbers = [ 1, 2, 3, 4, 5 ];
-
+// prints each array item and index position
 numbers.forEach((num, i) => {
   console.log(num, i);
 })
@@ -34,11 +34,10 @@ numbers.forEach((num, i) => {
 #### [@4m38s](https://youtu.be/FQPowZglpJA?t=4m38s)
 ```js
 let numbers = [ 1, 2, 3, 4, 5 ];
-
+// maps duplicate value from numbers array
 let doubleNums = numbers.map(num => num * 2);
-
+// ---> [ 2, 4, 6, 8, 10 ]
 console.log(doubleNums)
 ```
-
 - Without curly braces a single expression is returned by default:
 - syntax: `(variable_name(s) => single_expression_return_value )`
