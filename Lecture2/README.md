@@ -123,7 +123,7 @@ me.sayHi = function() {           // <--- what we've seen before
 
 me.sayHi();   // ---> Ben
 
-var boundSayHi = me.sayHi.bind({  // <--- the bind() method
+const boundSayHi = me.sayHi.bind({  // <--- the bind() method
   name: 'Austen'
 });
 
