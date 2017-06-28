@@ -42,3 +42,14 @@ console.log(doubleNums)
 - Without curly braces a single statement is returned by default:
 - syntax: `(variable_name(s) => single_expression_return_value )`
 - note on map: doesn't modify the original array, just makes a copy
+
+#### [@7m50s](https://youtu.be/FQPowZglpJA?t=7m50s) **The equivalent functional version**
+```js
+const numbers = [ 1, 2, 3, 4, 5 ];
+// map duplicates value from numbers array
+const doubleNums = numbers.map(function (num) {
+  return num * 2;
+});
+// ---> [ 2, 4, 6, 8, 10 ]
+console.log(doubleNums)
+```
