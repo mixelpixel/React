@@ -54,7 +54,7 @@
   console.log(doubleNums)
   ```
 
-## [@8m45s](https://youtu.be/FQPowZglpJA?t=8m45s) **Lexical This**
+## [@8m45s](https://youtu.be/FQPowZglpJA?t=8m45s) **Lexical `this`**
 - **Functional Notation**
   - `this` is bound to the function
   ```js
