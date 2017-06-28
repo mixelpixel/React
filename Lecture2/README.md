@@ -53,3 +53,24 @@ const doubleNums = numbers.map(function (num) {
 // ---> [ 2, 4, 6, 8, 10 ]
 console.log(doubleNums)
 ```
+
+#### [@8m45s](https://youtu.be/FQPowZglpJA?t=8m45s) **Lexical This**
+- Functional Notation
+  ```js
+  const numbers = [ 1, 2, 3, 4, 5 ];
+  // prints each array item
+  numbers.forEach(function (num) {
+    console.log(this);
+  })
+  ```
+
+- Arrow Notation
+  ```js
+  const numbers = [ 1, 2, 3, 4, 5 ];
+  // prints each array item
+  numbers.forEach(num => {
+    console.log(this);
+  })
+  ```
+
+- This
