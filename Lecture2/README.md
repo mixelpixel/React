@@ -81,3 +81,48 @@
 
   const bar = () => { this } // <--- references to the global
   ```
+
+## [@10m25s](https://youtu.be/FQPowZglpJA?t=10m25s) **Bind**
+- per [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind):
+  > The bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called.
+- see also [this answer](https://stackoverflow.com/a/10115970/5225057)
+```js
+function sayHi() {
+  console.log(this.name)
+}
+
+sayHi(); // <--- nothing gets printes
+```
+
+- the `bind()` method allows us to explicitly set what `this` refers to inside of a function
+```js
+function sayHi() {
+  console.log(this.name)
+}
+
+const me = {
+  name: 'Ben'
+};
+
+const boundSayHi = sayHi.bind(me);
+
+boundSayHi(); // ---> Ben
+```
+
+## [@11m55s](https://youtu.be/FQPowZglpJA?t=10m25s) **Bind use cases**
+- an example of what we are used to:
+```js
+const me = {
+  name: 'Ben'
+};
+
+me.sayHi = function() {
+  console.log(this.name)
+}
+
+me.sayHi(); // ---> Ben
+```
+
+```js
+
+```
