@@ -110,6 +110,8 @@ boundSayHi(); // ---> Ben
 ```
 
 ## [@11m55s](https://youtu.be/FQPowZglpJA?t=10m25s) **Bind use cases**
+- NOTE: bind() doesn't need to invoke the method being bound, e.g.
+  - me.sayHi.bind(...) not me.sayHi(bind(...))
 ```js
 const me = {
   name: 'Ben'
