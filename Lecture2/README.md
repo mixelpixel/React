@@ -140,4 +140,5 @@ boundSayHi(); // ---> Austen
 - Tracking current state conditions and basing behavior on those state consitions
 
 ## [@17m8s](https://youtu.be/FQPowZglpJA?t=17m8s) **Building a Counter**
-- clear out the default App contents.
+- clear out the default App contents and unused logo import.
+- 
