@@ -162,16 +162,16 @@ boundSayHi(); // ---> Austen
     }
   }
   ```
-- we can write Header.js as a function:
-```jsx
-import React from 'react';
-import './App.css';
+- we can write Header.js as a function with `props`:
+  ```jsx
+  import React from 'react';
+  import './App.css';
 
-export default function(props) { // <--- props for "properties"
-  return (
-    <div className='Header'>
-      Our Header
-    </div>
-  );
-}
-```
+  export default function(props) { // <--- props for "properties"
+    return (
+      <div className='Header'>
+        Our Header
+      </div>
+    );
+  }
+  ```
