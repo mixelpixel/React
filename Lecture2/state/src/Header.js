@@ -4,7 +4,7 @@ import './App.css';
 export default function(props) {
   return (
     <div className='Header'>
-      Our Header
+      {props.title}
     </div>
   );
 }

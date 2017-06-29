@@ -175,3 +175,38 @@ boundSayHi(); // ---> Austen
     );
   }
   ```
+
+  #### [@22m34s](https://youtu.be/FQPowZglpJA?t=22m34s) **function(props) use case**
+  - in App.js we can add:
+  ```jsx
+  import React, { Component } from 'react';
+  // import logo from './logo.svg';
+  import './App.css';
+  import Header from './Header';
+
+  class App extends Component {
+    render() {
+      return (
+        <div className="App">
+          <Header title={'My Functional Component'}/> //<--- title "property"
+        </div>
+      );
+    }
+  }
+
+  export default App;
+  ```
+
+  - in Header.js we add the props!
+  ```jsx
+  import React from 'react';
+  import './App.css';
+
+  export default function(props) {
+    return (
+      <div className='Header'>
+        {props.title} // <------------ add title property
+      </div>
+    );
+  }
+  ```
