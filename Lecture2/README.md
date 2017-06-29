@@ -145,3 +145,21 @@ boundSayHi(); // ---> Austen
 - [App.js](Lecture2/state/src/App.js)
 - [Header.js](Lecture2/state/src/Header.js)
 - [App.css](Lecture2/state/src/App.css)
+
+## [@20m45s](https://youtu.be/FQPowZglpJA?t=20m45s) **Simplifying the Code**
+- instead of a class:
+  ```jsx
+  import React, { Component } from 'react';
+  import './App.css';
+
+  export default class Header extends Component {
+    render() {
+      return (
+        <div className='Header'>
+          Our Header
+        </div>
+      );
+    }
+  }
+  ```
+- we can write Header.js as a function:
