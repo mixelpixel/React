@@ -142,3 +142,6 @@ boundSayHi(); // ---> Austen
 ## [@17m8s](https://youtu.be/FQPowZglpJA?t=17m8s) **Building a Counter**
 - clear out the default App contents and unused logo import.
 - start with a static component (no state), Header.js
+- [App.js](Lecture2/state/src/App.js)
+- [Header.js](Lecture2/state/src/Header.js)
+- [App.css](Lecture2/state/src/App.css)
