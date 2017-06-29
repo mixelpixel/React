@@ -232,4 +232,4 @@ boundSayHi(); // ---> Austen
 ## [@24m20s](https://youtu.be/FQPowZglpJA?t=24m20s) **Q & A**
 
 ## [@26m40s](https://youtu.be/FQPowZglpJA?t=26m40s) **A Functional Component With State, cont.**
-- 
+- [Counter.js](Lecture2/state/src/Counter.js)
