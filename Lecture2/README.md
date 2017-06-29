@@ -215,3 +215,6 @@ boundSayHi(); // ---> Austen
 
 ## [@23m54s](https://youtu.be/FQPowZglpJA?t=23m54s) **A Functional Component With State**
 - A button, you push it, the counter goes up!
+- [Counter.js](Lecture2/state/src/Counter.js)
+  ```js
+  ```
