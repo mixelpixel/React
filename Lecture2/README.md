@@ -262,4 +262,11 @@ boundSayHi(); // ---> Austen
 
 ## [@38m17s](https://youtu.be/FQPowZglpJA?t=31m12s) **Update the State**
 - modify the state in a way which tells react to update the component
-- `this.setState({ ... })`
+  ```js
+  incrementCount() {
+    // alert(this.state.count);
+    this.state.count++;       // <--- view in browser JS console
+    console.log(this.state)   // <--- count increases, but not rendered!
+  ```
+
+- Instead we use: `this.setState({ ... })`
