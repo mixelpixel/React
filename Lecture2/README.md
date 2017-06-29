@@ -4,10 +4,10 @@
 - Arrow functions have _some_ different behavior
 - https://babeljs.io
 - ES6 & ES2015 are the same thing
-- https://babeljs.io/learn-es2015/#ecmascript-2015-features-arrows-and-lexical-this
 - The Arrow: `=>`
 - The Arrow and lexical `this`:
   > Unlike functions, arrows share the same lexical `this` as their surrounding code. If an arrow is inside another function, it shares the “arguments” variable of its parent function.
+  - https://babeljs.io/learn-es2015/#ecmascript-2015-features-arrows-and-lexical-this
 
   #### [@2m56s](https://youtu.be/FQPowZglpJA?t=2m56s) **Arrow Function Examples**
   ```js
@@ -110,28 +110,28 @@ const boundSayHi = sayHi.bind(me);
 boundSayHi(); // ---> Ben
 ```
 
-## [@11m55s](https://youtu.be/FQPowZglpJA?t=10m25s) **Bind use cases**
-- NOTE: bind() doesn't need to invoke the method being bound, e.g.
-  - me.sayHi.bind(...) not me.sayHi(bind(...))
-```js
-const me = {
-  name: 'Ben'
-};
+  #### [@11m55s](https://youtu.be/FQPowZglpJA?t=10m25s) **Bind use cases**
+  - NOTE: bind() doesn't need to invoke the method being bound, e.g.
+    - me.sayHi.bind(...) not me.sayHi(bind(...))
+  ```js
+  const me = {
+    name: 'Ben'
+  };
 
-me.sayHi = function() {           // <--- what we've seen before
-  console.log(this.name)
-}
+  me.sayHi = function() {           // <--- what we've seen before
+    console.log(this.name)
+  }
 
-me.sayHi();   // ---> Ben
+  me.sayHi();   // ---> Ben
 
-const boundSayHi = me.sayHi.bind({  // <--- the bind() method
-  name: 'Austen'
-});
+  const boundSayHi = me.sayHi.bind({  // <--- the bind() method
+    name: 'Austen'
+  });
 
-boundSayHi(); // ---> Austen
-```
+  boundSayHi(); // ---> Austen
+  ```
 
-## [@14m](https://youtu.be/FQPowZglpJA?t=14m) **Q & A**
+  #### [@14m](https://youtu.be/FQPowZglpJA?t=14m) **Q & A**
 
 ## [@15m](https://youtu.be/FQPowZglpJA?t=15m) **React Project: State**
 - `create-react-app state`
@@ -229,7 +229,7 @@ boundSayHi(); // ---> Austen
     }
   }
   ```
-## [@24m20s](https://youtu.be/FQPowZglpJA?t=24m20s) **Q & A**
+#### [@24m20s](https://youtu.be/FQPowZglpJA?t=24m20s) **Q & A**
 
 ## [@26m40s](https://youtu.be/FQPowZglpJA?t=26m40s) **A Functional Component With State, cont.**
 - [Counter.js](Lecture2/state/src/Counter.js)
