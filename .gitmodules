@@ -1,3 +1,6 @@
 [submodule "LS-Pro-React-I"]
 	path = LS-Pro-React-I
 	url = https://github.com/mixelpixel/LS-Pro-React-I.git
+[submodule "LS-Pro-React-II"]
+	path = LS-Pro-React-II
+	url = https://github.com/mixelpixel/LS-Pro-React-II.git
