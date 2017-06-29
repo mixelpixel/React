@@ -235,7 +235,7 @@ boundSayHi(); // ---> Austen
 - [Counter.js](Lecture2/state/src/Counter.js)
 - Import the Counter in src/App.js and stick the component in the App return
 
-## [@28m12s](https://youtu.be/FQPowZglpJA?t=28m12s) **Add the Incrementing Functionality with CONSTRUCTOR**
+## [@28m12s](https://youtu.be/FQPowZglpJA?t=28m12s) **CONSTRUCTOR**
 - we have a STATE object that is conected to the COMPONENT
 - on that STATE object we can attach a count PROPERTY
 - We can reference the PROPERTY inside of the RENDER method
@@ -247,3 +247,6 @@ boundSayHi(); // ---> Austen
     this.state = {};
   }
   ```
+
+## [@31m12s](https://youtu.be/FQPowZglpJA?t=31m12s) **Add the Incrementing Functionality**
+- custom method to add button clicking functionality
