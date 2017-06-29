@@ -215,6 +215,18 @@ boundSayHi(); // ---> Austen
 
 ## [@23m54s](https://youtu.be/FQPowZglpJA?t=23m54s) **A Functional Component With State**
 - A button, you push it, the counter goes up!
-- [Counter.js](Lecture2/state/src/Counter.js)
+- [Counter.js](Lecture2/state/src/Counter.js) will be built as a class:
   ```js
+  import React, { Component } from 'react';
+
+  export default class Counter extends Component {
+    render () {
+      return (
+        <div>
+          a counter
+        </div>
+      );
+    }
+  }
   ```
+- [@24m20s] a question is asked
