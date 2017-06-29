@@ -11,11 +11,11 @@ export default class Counter extends Component {
 
 incrementCount() {
   // alert(this.state.count);
-  this.state.count++;       // <--- view in browser JS console
-  console.log(this.state)   // <--- count increases, but not rendered!
-  // this.setState({
-  //
-  // })
+  // this.state.count++;       // <--- view in browser JS console
+  // console.log(this.state)   // <--- count increases, but not rendered!
+  this.setState({
+    count: this.state.count +1
+  });
 }
 
   render () {
