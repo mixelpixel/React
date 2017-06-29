@@ -233,3 +233,4 @@ boundSayHi(); // ---> Austen
 
 ## [@26m40s](https://youtu.be/FQPowZglpJA?t=26m40s) **A Functional Component With State, cont.**
 - [Counter.js](Lecture2/state/src/Counter.js)
+- Import the Counter in src/App.js and stick the component in the App return
