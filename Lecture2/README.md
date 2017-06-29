@@ -130,3 +130,5 @@ const boundSayHi = me.sayHi.bind({  // <--- the bind() method
 
 boundSayHi(); // ---> Austen
 ```
+
+## [@14m](https://youtu.be/FQPowZglpJA?t=14m) **Q & A**
