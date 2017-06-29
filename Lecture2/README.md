@@ -248,5 +248,16 @@ boundSayHi(); // ---> Austen
   }
   ```
 
-## [@31m12s](https://youtu.be/FQPowZglpJA?t=31m12s) **Add the Incrementing Functionality**
+## [@31m12s](https://youtu.be/FQPowZglpJA?t=31m12s) **Add the Button Functionality**
 - custom method to add button clicking functionality
+- onCick
+- binding the method to the class
+  ```js
+  this.incrementCount = this.incrementCount.bind(this);
+  ```
+  - Could do it like this, but then we'd need to bind each instance of the function being invoked:
+  ```js
+  <button onClick={this.incrementCount.bind(this)} >Increment</button>
+  ```
+
+## [@38m17s](https://youtu.be/FQPowZglpJA?t=31m12s) **Update the State**
