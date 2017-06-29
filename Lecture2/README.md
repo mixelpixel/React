@@ -234,3 +234,16 @@ boundSayHi(); // ---> Austen
 ## [@26m40s](https://youtu.be/FQPowZglpJA?t=26m40s) **A Functional Component With State, cont.**
 - [Counter.js](Lecture2/state/src/Counter.js)
 - Import the Counter in src/App.js and stick the component in the App return
+
+## [@28m12s](https://youtu.be/FQPowZglpJA?t=28m12s) **Add the Incrementing Functionality with CONSTRUCTOR**
+- we have a STATE object that is conected to the COMPONENT
+- on that STATE object we can attach a count PROPERTY
+- We can reference the PROPERTY inside of the RENDER method
+- Initialize the default value with the constructor() method
+- Constructor is a method that is in all ES6 classes
+  ```js
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  ```
