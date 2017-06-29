@@ -262,11 +262,23 @@ boundSayHi(); // ---> Austen
 
 ## [@38m17s](https://youtu.be/FQPowZglpJA?t=31m12s) **Update the State**
 - modify the state in a way which tells react to update the component
-  ```js
-  incrementCount() {
-    // alert(this.state.count);
-    this.state.count++;       // <--- view in browser JS console
-    console.log(this.state)   // <--- count increases, but not rendered!
-  ```
+```js
+incrementCount() {
+  // alert(this.state.count);
+  this.state.count++;       // <--- view in browser JS console
+  console.log(this.state)   // <--- count increases, but not rendered!
+```
 
-- Instead we use: `this.setState({ ... })`
+- Instead we use: `this.setState({ count: this.state.count + 1 })`
+
+## [@42m42s](https://youtu.be/FQPowZglpJA?t=42m42s) **Update the State with a callback**
+- setState is ASYNCHRONOUS
+- setState can take an object or a callback function as its argument.
+- better practice is to use arrow functions for a callback when you need to reference the current state to generate or get to the updated state, e.g.
+```js
+this.setState(currentState => {
+  return {
+    count: currentState.count + 1
+  }
+});
+```
