@@ -146,7 +146,7 @@ boundSayHi(); // ---> Austen
 - [Header.js](Lecture2/state/src/Header.js)
 - [App.css](Lecture2/state/src/App.css)
 
-## [@20m45s](https://youtu.be/FQPowZglpJA?t=20m45s) **Simplifying the Code**
+## [@20m45s](https://youtu.be/FQPowZglpJA?t=20m45s) **Simplifying the Code with function(props)**
 - instead of a class:
   ```jsx
   import React, { Component } from 'react';
@@ -167,7 +167,7 @@ boundSayHi(); // ---> Austen
 import React from 'react';
 import './App.css';
 
-export default function(props) {
+export default function(props) { // <--- props for "properties"
   return (
     <div className='Header'>
       Our Header
