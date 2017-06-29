@@ -132,6 +132,7 @@ boundSayHi(); // ---> Austen
 ```
 
 ## [@14m](https://youtu.be/FQPowZglpJA?t=14m) **Q & A**
+
 ## [@15m](https://youtu.be/FQPowZglpJA?t=15m) **React Project: State**
 - `create-react-app state`
 - "State" is a key part of React
@@ -210,6 +211,6 @@ boundSayHi(); // ---> Austen
     );
   }
   ```
-  - NOTE: \<h1> has some margin built into it so that is why there is the buffer at the top (like in Homework1)
+  - NOTE: `<h1>` has some margin built into it so that is why there is the buffer at the top (like in Homework1)
 
 ## [@23m54s](https://youtu.be/FQPowZglpJA?t=23m54s) **A Functional Component With State**
