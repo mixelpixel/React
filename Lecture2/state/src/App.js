@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header title={'My Functional Component'}/>
+        <Header title={'My Awesome React App'}/>
       </div>
     );
   }
