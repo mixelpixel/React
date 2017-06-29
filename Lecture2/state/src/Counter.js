@@ -4,15 +4,14 @@ export default class Counter extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+      count: 0
     };
   }
 
   render () {
-    const count = 0;
     return (
       <div>
-        {count}
+        {this.state.count}
         <button>Increment</button>
       </div>
     );
