@@ -134,4 +134,7 @@ boundSayHi(); // ---> Austen
 ## [@14m](https://youtu.be/FQPowZglpJA?t=14m) **Q & A**
 ## [@15m](https://youtu.be/FQPowZglpJA?t=15m) **React Project: State**
 - `create-react-app state`
--
+- "State" is a key part of React
+- React components are like custom HTML elements
+- State is how you monitor what state the element is in
+- 
