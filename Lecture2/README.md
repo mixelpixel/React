@@ -261,3 +261,5 @@ boundSayHi(); // ---> Austen
   ```
 
 ## [@38m17s](https://youtu.be/FQPowZglpJA?t=31m12s) **Update the State**
+- modify the state in a way which tells react to update the component
+- `this.setState({ ... })`
