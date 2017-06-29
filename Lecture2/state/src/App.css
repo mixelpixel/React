@@ -1,3 +1,8 @@
 .App {
   text-align: center;
 }
+
+.Header {
+  height: 150px;
+  background-color: whitesmoke;
+}
