@@ -210,3 +210,4 @@ boundSayHi(); // ---> Austen
     );
   }
   ```
+  - NOTE: <h1> has some margin built into it so that is why there is the buffer at the top (like in Homework1)
