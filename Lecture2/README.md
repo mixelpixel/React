@@ -137,4 +137,7 @@ boundSayHi(); // ---> Austen
 - "State" is a key part of React
 - React components are like custom HTML elements
 - State is how you monitor what state the element is in
-- 
+- Tracking current state conditions and basing behavior on those state consitions
+
+## [@17m8s](https://youtu.be/FQPowZglpJA?t=17m8s) **Building a Counter**
+- clear out the default App contents.
