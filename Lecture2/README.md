@@ -229,4 +229,7 @@ boundSayHi(); // ---> Austen
     }
   }
   ```
-- [@24m20s] a question is asked
+## [@24m20s](https://youtu.be/FQPowZglpJA?t=24m20s) **Q & A**
+
+## [@26m40s](https://youtu.be/FQPowZglpJA?t=26m40s) **A Functional Component With State, cont.**
+- 
