@@ -270,6 +270,7 @@ incrementCount() {
 ```
 
 - Instead we use: `this.setState({ count: this.state.count + 1 })`
+- and the button clicks update the State and the new State is rendered in the html!
 
 ## [@42m42s](https://youtu.be/FQPowZglpJA?t=42m42s) **Update the State with a callback**
 - setState is ASYNCHRONOUS
