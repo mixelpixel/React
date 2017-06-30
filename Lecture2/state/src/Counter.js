@@ -20,7 +20,7 @@ incrementCount() {
   //   count: this.state.count +1
   // });
   // step 4
-  this.setState(currentState => {   // <---- ASNCHRONOUS!!! :D
+  this.setState(currentState => {   // <---- ASYNCHRONOUS!!! :D
     return {
       count: currentState.count + 1 // <--- better for instances when you need to reference
     }                               // <--- the current state to get the new state
@@ -31,7 +31,7 @@ incrementCount() {
     return (
       <div>
         {this.state.count}
-        <button onClick={this.incrementCount} >Increment</button>
+        <button onClick={this.incrementCount}>Increment</button>
       </div>
     );
   }
