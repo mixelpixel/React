@@ -1,2 +1,2 @@
 # LESSON THREE LECTURE NOTES
-## [@?m??s](https://youtu.be/ULx7gruIh20?t=?m??s) **Lecture 3 starts**
+## [@32s](https://youtu.be/ULx7gruIh20?t=32s) **Native Global Functions: `setInterval` & `setTimeOut` review of Homework 2**
