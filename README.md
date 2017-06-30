@@ -20,7 +20,7 @@
 - [Homework Assignment 2](https://github.com/SunJieMing/LS-Pro-React-II)
 - [Completed Homework Assignment 2]()
 
-# Lesson 3 - ???
+# Lesson 3 - High level design patterns, props & prop types, how to repeat a list of objects into elements and print them within the DOM, & Flexbox
 - [Lecture 3](https://youtu.be/ULx7gruIh20)
 - [Lecture 3 NOTES](Lecture3/README.md)
 - [Homework Assignment 3](https://github.com/SunJieMing/LS-Pro-React-III)
