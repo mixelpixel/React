@@ -15,4 +15,4 @@
 #### [@14m35s](https://youtu.be/ULx7gruIh20?t=14m35s) **Alternative Solutions pt.2**
 - Better design pattern
 
-## [@17m]https://youtu.be/ULx7gruIh20?t=17m)
+## [@17m]https://youtu.be/ULx7gruIh20?t=17m) **Card Layout**
