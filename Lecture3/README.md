@@ -44,3 +44,4 @@
 - map the array values into Feed.js per the array keys
 - use {this.props....} in Cards.js to handle the data Feed gets
 #### [@40m27s](https://youtu.be/ULx7gruIh20?t=40m27s) **static propTypes**
+- restricting allowed/acceptable data types, more secure
