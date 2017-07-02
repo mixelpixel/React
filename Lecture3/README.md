@@ -45,3 +45,15 @@
 - use {this.props....} in Cards.js to handle the data Feed gets
 #### [@40m27s](https://youtu.be/ULx7gruIh20?t=40m27s) **static propTypes**
 - restricting allowed/acceptable data types, more secure
+
+## [@43m59s](https://youtu.be/ULx7gruIh20?t=43m59s) **Summary**
+- setInterval
+- setTimeOut
+- Counter example
+- High level overview of design patterns
+- structuring components
+- prop types
+- next steps: content component to style, image component, etc...
+- Redux handles control flow for things like saving data
+#### [@45m19s](https://youtu.be/ULx7gruIh20?t=45m19s) **breakdown with Feed.js**
+#### [@46m16s](https://youtu.be/ULx7gruIh20?t=46m16s) **Key Index consideration: performance**
