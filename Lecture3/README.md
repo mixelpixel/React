@@ -39,4 +39,6 @@
 - add a second card with margins
 #### [@33m](https://youtu.be/ULx7gruIh20?t=33m) **Iterating Cards Dynamically**
 - dummy data array to work with
--
+- making a card per array item
+#### [@37m23s](https://youtu.be/ULx7gruIh20?t=37m23s) **Passing array values into the Card components**
+- 
