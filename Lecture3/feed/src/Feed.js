@@ -10,13 +10,13 @@ const posts = [
     content: 'osdhlajshdvlahdsjva ljdhlasd lsdhlajksdhfla liasdghf a'
   },
   {
-    title: 'My Post',
-    author: 'Ben',
-    content: 'osdhlajshdvlahdsjva ljdhlasd lsdhlajksdhfla liasdghf a'
+    title: 'Lambda School',
+    author: 'Levi',
+    content: 'XXXXXXXXXXXXXXX'
   },
   {
-    title: 'My Post',
-    author: 'Ben',
+    title: 'React forever',
+    author: 'Austen',
     content: 'osdhlajshdvlahdsjva ljdhlasd lsdhlajksdhfla liasdghf a'
   },
   {
