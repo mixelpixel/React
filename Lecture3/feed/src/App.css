@@ -1,3 +1,8 @@
 .App {
   text-align: center;
+  background-color: whitesmoke;
+}
+
+.card {
+  background-color: white;
 }
