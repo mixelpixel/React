@@ -1,2 +1,3 @@
 # LESSON FOUR LECTURE NOTES
-## [@?m??s](https://youtu.be/vi8oJD5EcX8?t=?m??s) **Lecture 4 starts**
+## [@20s](https://youtu.be/vi8oJD5EcX8?t=20s) **Debugging Applications in Chrome Console**
+- keyword: `debugger;`
