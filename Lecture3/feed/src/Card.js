@@ -3,6 +3,13 @@ import './App.css';
 
 
 export default class Card extends Component {
+
+  static propTypes = {
+    title: React.propTypes.string,
+    author: React.propTypes.string,
+    content: React.propTypes.string
+  }
+
   render() {
      return(
        <div className="card">
