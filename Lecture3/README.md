@@ -18,3 +18,7 @@
 ## [@17m](https://youtu.be/ULx7gruIh20?t=17m) **Card Layout example**
 ## [@18m](https://youtu.be/ULx7gruIh20?t=18m) **Components: breaking down a page**
 ## [@21m39s](https://youtu.be/ULx7gruIh20?t=21m39s) **Create a Feed Scroll with Card Components**
+- Prjoect name: "[feed](Lecture3/feed)"
+- Basic App setup with a Feed and a Card component
+#### [@24m48s](https://youtu.be/ULx7gruIh20?t=24m48s) **Add Some Style**
+- add App.css to Feed.js and Card.js
