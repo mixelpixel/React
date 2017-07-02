@@ -21,4 +21,4 @@
 - Prjoect name: "[feed](Lecture3/feed)"
 - Basic App setup with a Feed and a Card component
 #### [@24m48s](https://youtu.be/ULx7gruIh20?t=24m48s) **Add Some Style**
-- add App.css to Feed.js and Card.js
+- import App.css to Feed.js and Card.js
