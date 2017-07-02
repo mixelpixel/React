@@ -25,4 +25,13 @@
 - Card.js `<div className="card">`
 #### [@27m05s](https://youtu.be/ULx7gruIh20?t=27m05s) **Centering with FLEXBOX**
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- NOTE: older browsers & IE as red-headed step-child...
 - [@29m31s](https://youtu.be/ULx7gruIh20?t=29m31s): `{display: flex;}`
+```css
+.feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+```
+#### [@32m](https://youtu.be/ULx7gruIh20?t=32m) **Add another Card**
