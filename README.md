@@ -9,6 +9,7 @@
 - https://jsx.github.io/
 - https://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://reacttraining.com/react-router/web/guides/quick-start
 
 # Lesson 1 - Introduction to React and ES6
 - [Lecture 1](https://youtu.be/7QwRtGtluJk)
