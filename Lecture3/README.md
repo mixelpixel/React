@@ -34,5 +34,9 @@
   align-items: center;
 }
 ```
+
 #### [@32m](https://youtu.be/ULx7gruIh20?t=32m) **Add more Cards**
 - add a second card with margins
+#### [@33m](https://youtu.be/ULx7gruIh20?t=33m) **Iterating Cards Dynamically
+- dummy data array to work with
+- 
