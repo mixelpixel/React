@@ -23,3 +23,6 @@
 #### [@24m48s](https://youtu.be/ULx7gruIh20?t=24m48s) **Add Some Style**
 - import App.css to Feed.js and Card.js
 - Card.js `<div className="card">`
+#### [@27m05s](https://youtu.be/ULx7gruIh20?t=27m05s) **Centering with FLEXBOX**
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- [@29m31s](https://youtu.be/ULx7gruIh20?t=29m31s): `{display: flex;}`
