@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+// per deprecation warning, but no difference with compile error ?
+// import PropTypes from 'prop-types';
 import './App.css';
 
 
 export default class Card extends Component {
-
+  // deprecation warning upon compile?
   static propTypes = {
-    title:    React.PropTypes.string,
-    author:   React.PropTypes.string,
-    content:  React.PropTypes.string
+    title:   React.PropTypes.string,
+    author:  React.PropTypes.string,
+    content: React.PropTypes.string
   };
 
   render() {
