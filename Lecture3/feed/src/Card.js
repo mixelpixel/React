@@ -6,7 +6,9 @@ export default class Card extends Component {
   render() {
      return(
        <div className="card">
-         I'm a Card
+         <h2>{this.props.title}</h2>
+         <h3>{this.props.author}</h3>
+         <p>{this.props.content}</p>
        </div>
      )
    }

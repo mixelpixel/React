@@ -32,7 +32,10 @@ export default class Feed extends Component {
      return(
        <div className="feed">
          { posts.map((post) => {
-           return <Card />
+           return <Card
+             title={post.title}
+             author={post.author}
+             content={post.content}/>
          }) }
        </div>
      )
