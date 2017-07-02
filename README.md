@@ -8,7 +8,6 @@
 - https://atom.io/packages/language-babel
 - https://jsx.github.io/
 - https://tylermcginnis.com/reactjs-tutorial-a-comprehensive-guide-to-building-apps-with-react/
--
 
 # Lesson 1 - Introduction to React and ES6
 - [Lecture 1](https://youtu.be/7QwRtGtluJk)
