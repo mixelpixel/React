@@ -57,3 +57,6 @@
 - Redux handles control flow for things like saving data
 #### [@45m19s](https://youtu.be/ULx7gruIh20?t=45m19s) **breakdown with Feed.js**
 #### [@46m16s](https://youtu.be/ULx7gruIh20?t=46m16s) **Key Index consideration: performance**
+
+***
+##fin
