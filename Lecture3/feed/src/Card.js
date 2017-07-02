@@ -5,10 +5,10 @@ import './App.css';
 export default class Card extends Component {
 
   static propTypes = {
-    title: React.propTypes.string,
-    author: React.propTypes.string,
-    content: React.propTypes.string
-  }
+    title:    React.PropTypes.string,
+    author:   React.PropTypes.string,
+    content:  React.PropTypes.string
+  };
 
   render() {
      return(
