@@ -4,6 +4,12 @@
   height: 5000px
 }
 
+.feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card {
   background-color: white;
   width: 500px;

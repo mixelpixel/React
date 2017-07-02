@@ -7,7 +7,7 @@ export default class Feed extends Component {
 
   render() {
      return(
-       <div>
+       <div className="feed">
          <Card />
        </div>
      )
