@@ -15,4 +15,6 @@
 #### [@14m35s](https://youtu.be/ULx7gruIh20?t=14m35s) **Alternative Solutions pt.2**
 - Better design pattern
 
-## [@17m](https://youtu.be/ULx7gruIh20?t=17m) **Card Layout**
+## [@17m](https://youtu.be/ULx7gruIh20?t=17m) **Card Layout example**
+## [@18m](https://youtu.be/ULx7gruIh20?t=18m) **Components: breaking down a page**
+## [@21m39s](https://youtu.be/ULx7gruIh20?t=21m39s) **Create a Feed Scroll with Card Components**
