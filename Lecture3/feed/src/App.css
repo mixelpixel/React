@@ -6,4 +6,6 @@
 
 .card {
   background-color: white;
+  width: 500px;
+  height: 600px;
 }
