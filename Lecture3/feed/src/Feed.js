@@ -9,6 +9,7 @@ export default class Feed extends Component {
      return(
        <div className="feed">
          <Card />
+         <Card />
        </div>
      )
    }
