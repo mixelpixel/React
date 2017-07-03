@@ -120,14 +120,14 @@ export default () => {
 - adding `props` object
 - `import Link from 'react-router-dom';` to use <Link></Link>
 - match the base URL with where they are at and send them off to the topics...
-- JavaScript string literals:
+- JavaScript string literals, the `props.match.url` becomes `localhots:3000/topics/`
 ```js
 <Link to={`${props.match.url}/topic1`}>
-Topic
+Topic 1
 </Link>
 ```
 
-- Route parameter:
+- Route parameter, gets the specific `/:topicId` to become `localhots:3000/topics/topic1`
 ```js
 <Route path={`${props.match.url}/:topicId`} component={Topic} />
 ```
