@@ -117,3 +117,8 @@ export default () => {
 ```
 
 ## [@32m38s](https://youtu.be/Mnfo3aCnri8?t=32m48s) **Sub-Routes and URL parameters**
+- adding `props` object
+- `import Link from 'react-router-dom';` to use <Link></Link>
+- match the base URL with where they are at and send them off to the topics...
+- JavaScript string literals `<Link to={`${props.match.url}/topic1`}>`
+- 
