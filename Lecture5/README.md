@@ -107,3 +107,13 @@ var foo = function() {
 
 ## [@18m30s](https://youtu.be/Mnfo3aCnri8?t=18m30s) **React**
 ## [@22m39s](https://youtu.be/Mnfo3aCnri8?t=22m39s) **BrowserRouter**
+- equivalent statements:
+```js
+export default () => (<div>Home</div>); // <--- () parentheses say just one statement to return
+
+export default () => {
+  return <div>Home</div>;
+};
+```
+
+## [@32m38s](https://youtu.be/Mnfo3aCnri8?t=32m48s) **Sub-Routes and URL parameters**
