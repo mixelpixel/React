@@ -4,8 +4,8 @@
 ---
 1. Feynman Writing Prompts - Write out explanations of the following concepts like you are explaining it to a 12 year old.  Doing this will help you quickly discover any holes in your understanding.  Ask your questions on Slack.
 
-  * `debugger`
-  * react router
+  * `debugger` - keyord for using Chrome developer tools debugger to step through code
+  * react router - handles routing to different URLs
   * `<Router />` (BrowserRouter)
   * `<Route />`
   * `<Link />`
@@ -29,4 +29,4 @@
 #### Congratulations on finishing Homework #4!
 
 For more information about our part-time and full-time courses visit: https://www.lambdaschool.com
-LambdaSchool's full-time class is now tuition guaranteed.  
+LambdaSchool's full-time class is now tuition guaranteed.
