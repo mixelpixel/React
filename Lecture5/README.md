@@ -1,6 +1,5 @@
 # LESSON FIVE LECTURE NOTES
-## [@1m08s](https://youtu.be/Mnfo3aCnri8?t=1m08s) **Lecture 5 starts**
-- ES6 features and Routing
+## [@1m08s](https://youtu.be/Mnfo3aCnri8?t=1m08s) **ES6 Features**
 - Destructuring Component
 ```js
 const pizza = {
@@ -25,8 +24,6 @@ const pizza = {
   yummy: true
 }
 
-const { calories } = pizza;
-
 // const logInfo = (arg) => {
 //   console.log(arg) // ---> prints pizza object
 // const logInfo = (arg) => {
@@ -38,4 +35,74 @@ const logInfo = ({ calories }) => {
 logInfo(pizza);
 ```
 
-- direct reference to one property in an objectk
+- direct reference to one property in an object
+
+#### [@8m48s](https://youtu.be/Mnfo3aCnri8?t=8m48s) **shorthand syntax**
+- structuring objects
+```js
+const foo = () => {
+  console.log('hi');
+};
+
+// // ES5
+// const obj = {
+//   foo: foo
+// };
+// obj.foo();
+
+// ES6 shorthand
+const obj = {
+  foo
+};
+obj.foo();
+
+```
+
+#### [@10m57s](https://youtu.be/Mnfo3aCnri8?t=10m57s) **unknown number of arguments**
+```js
+const foo = (...args) => {
+  console.log(args.length);
+};
+
+foo(1, 2, 3, 4, 5, true, null, undefined); // ---> 8
+
+```
+
+#### [@13m40s](https://youtu.be/Mnfo3aCnri8?t=13m40s) **ES5**
+- VARIABLE HOISTING: variable and function declarations compiled first, e.g. "hoisted to the top"
+```js
+var x = 10;
+function foo() {
+}
+var foo = function() { // referred to as a "function expression")
+};
+```
+
+BECOMES
+```js
+var x;
+var foo;
+function foo() {
+}
+x = 10;
+var foo = function() { // referred to as a "function expression")
+};
+```
+
+IN PRACTICE:
+```js
+foo();
+function foo() {
+  console.log('hi')
+}
+```
+
+WORKS, BUT A FUNCTION EXPRESSION NEEDS TO BE DECLARED BEFORE IT IS CALLED:
+```js
+foo();                     // <---- This results in an error
+var foo = function() {
+  console.log('hi')
+}
+```
+
+## [@18m30s](https://youtu.be/Mnfo3aCnri8?t=18m30s) **React**
