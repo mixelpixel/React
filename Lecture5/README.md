@@ -131,3 +131,7 @@ Topic 1
 ```js
 <Route path={`${props.match.url}/:topicId`} component={Topic} />
 ```
+
+## [@43m50s](https://youtu.be/Mnfo3aCnri8?t=43m50s) **Default route**
+- instead of a component, use a render property which we can pass a function to using JSX
+## [@45m53s](https://youtu.be/Mnfo3aCnri8?t=45m53s) **Summary**
