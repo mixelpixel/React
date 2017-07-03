@@ -4,3 +4,12 @@
 [submodule "LS-Pro-React-II"]
 	path = LS-Pro-React-II
 	url = https://github.com/mixelpixel/LS-Pro-React-II.git
+[submodule "LS-Pro-React-III"]
+	path = LS-Pro-React-III
+	url = https://github.com/mixelpixel/LS-Pro-React-III.git
+[submodule "LS-Pro-React-IV"]
+	path = LS-Pro-React-IV
+	url = https://github.com/mixelpixel/LS-Pro-React-IV.git
+[submodule "LS-Pro-React-V"]
+	path = LS-Pro-React-V
+	url = https://github.com/mixelpixel/LS-Pro-React-V.git
