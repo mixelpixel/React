@@ -211,6 +211,7 @@ boundSayHi(); // ---> Ben
     );
   }
   ```
+
   - NOTE: `<h1>` has some margin built into it so that is why there is the buffer at the top (like in Homework1)
 
 ## [@23m54s](https://youtu.be/FQPowZglpJA?t=23m54s) **A Functional Component With State**
@@ -229,6 +230,7 @@ boundSayHi(); // ---> Ben
     }
   }
   ```
+
 #### [@24m20s](https://youtu.be/FQPowZglpJA?t=24m20s) **Q & A**
 
 ## [@26m40s](https://youtu.be/FQPowZglpJA?t=26m40s) **A Functional Component With State, cont.**
@@ -255,6 +257,7 @@ boundSayHi(); // ---> Ben
   ```js
   this.incrementCount = this.incrementCount.bind(this);
   ```
+
   - Could do it like this, but then we'd need to bind each instance of the function being invoked:
   ```js
   <button onClick={this.incrementCount.bind(this)} >Increment</button>
@@ -283,3 +286,6 @@ this.setState(currentState => {
   }
 });
 ```
+
+***
+## fin
