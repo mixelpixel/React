@@ -270,6 +270,7 @@ incrementCount() {
   // alert(this.state.count);
   this.state.count++;       // <--- view in browser JS console
   console.log(this.state)   // <--- count increases, but not rendered!
+}
 ```
 
 - Instead we use: `this.setState({ count: this.state.count + 1 })`
